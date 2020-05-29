@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: echo "hello"
+  web: /usr/sbin/httpd -D FOREGROUND
