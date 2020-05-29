@@ -45,8 +45,8 @@ class HomeSection extends Component {
           <hr />
           <p style={{ textAlign: "center" }}>
             A coder turned designer who wants to build well-designed products.
-            <br /> I dual-wield VS Code and Figma.
           </p>
+          <p> I dual-wield VS Code and Figma.</p>
           <Spacer />
           <div className="bottom">
             <p>
