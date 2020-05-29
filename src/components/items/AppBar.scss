@@ -1,0 +1,46 @@
+@import "../../sass/shared.scss";
+
+.app-bar {
+  background-color: var(--bg-color);
+  height: 80px;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+
+  button {
+    height: 32px;
+  }
+
+  .right {
+    font-size: 1rem;
+
+    * {
+      margin-right: 52px;
+    }
+    *:last-child {
+      margin-right: 0px;
+    }
+
+    .link-item {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: var(--fg-color);
+      text-decoration: none;
+    }
+
+    .link-item:active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .link-item:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../sass/shared.scss";
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  max-width: 350px;
+  overflow: hidden;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: var(--elevated-color);
+
+  img {
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0px;
+    font-weight: bold;
+  }
+
+  p {
+    color: var(--dark-grey);
+    font-size: 1.286rem;
+    margin: 0px 0px;
+    padding: 0px;
+    font-weight: normal;
+    line-height: 1.527rem;
+    margin-bottom: 24px;
+  }
+
+  .text-section {
+    margin: 16px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 16px;
+    margin-right: 8px;
+
+    a {
+      font-size: 1.286rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import "sass/shared.scss";
+body {
+  font-family: var(--font-family);
+  margin: 0px;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  transition: 0.2s all ease;
+}

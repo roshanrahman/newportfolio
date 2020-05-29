@@ -1,0 +1,36 @@
+@import "./shared.scss";
+
+.primary-gradient {
+  background: -webkit-linear-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.design-gradient {
+  background: radial-gradient(
+    133.5% 133.5% at 133.5% 78%,
+    #3f27d2 0%,
+    #f833e4 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coding-gradient {
+  background: radial-gradient(
+    133.5% 133.5% at 133.5% 78%,
+    #0068b4 0%,
+    #00e067 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nitya-gaan-gradient {
+  background: radial-gradient(75% 75% at 13% 26%, #ff5b00 0%, #db0e00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

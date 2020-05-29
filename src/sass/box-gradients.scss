@@ -1,0 +1,17 @@
+@import "./shared.scss";
+
+.box-primary-gradient {
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+
+.box-dribbble-gradient {
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+
+.shadow-dribbble {
+  box-shadow: 0px 8px 16px rgba(207, 38, 104, 0.43);
+}
+
+.shadow-github {
+  box-shadow: 0px 8px 16px rgba(105, 105, 105, 0.43);
+}

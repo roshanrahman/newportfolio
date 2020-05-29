@@ -1,0 +1,33 @@
+@import "../../../sass/shared.scss";
+
+.button {
+  height: 38px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 18px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--fg-color);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s box-shadow ease;
+}
+
+.button:hover {
+  filter: grayscale(20%);
+}
+
+.button:active {
+  box-shadow: none;
+}
+.rounded {
+  border-radius: 50px;
+}
+
+.outlined {
+  border: 1.3px solid var(--dark-grey);
+  background-color: var(--background-color);
+  color: var(--dark-grey);
+}
