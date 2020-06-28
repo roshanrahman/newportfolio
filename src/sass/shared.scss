@@ -14,11 +14,19 @@ html {
   --github-color: #121212;
   --elevated-color: #fff;
   --divider-color: rgba(0, 0, 0, 0.03);
+
+  .dark-only {
+    display: none;
+  }
+
+  .light-only {
+    display: block;
+  }
 }
 
 [data-theme="dark"] {
-  --primary-color: #5571fd;
-  --secondary-color: #001aff;
+  --primary-color: #8c9fff;
+  --secondary-color: #4053ff;
   --fg-color: #fafafa;
   --bg-color: #121212;
   --dark-grey: rgb(165, 165, 165);
@@ -27,6 +35,14 @@ html {
   --github-color: #474747;
   --elevated-color: #1a1a1a;
   --divider-color: rgb(0, 0, 0, 0.2);
+
+  .light-only {
+    display: none;
+  }
+
+  .dark-only {
+    display: block;
+  }
 }
 
 * {
@@ -55,6 +71,17 @@ section {
 }
 
 @media screen and (max-width: 1340px) {
+  .nomobile {
+    display: none;
+  }
+
+  .mobile-flex {
+    display: flex;
+  }
+
+  .mobile-block {
+    display: block;
+  }
   section {
     padding: 24px;
   }

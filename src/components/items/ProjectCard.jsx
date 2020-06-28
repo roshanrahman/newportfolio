@@ -1,6 +1,16 @@
 import React from "react";
 import "./ProjectCard.scss";
 import "../../sass/text-gradients.scss";
+
+import PropTypes from "prop-types";
+
+ProjectCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  publisher: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
+
 export default function ProjectCard() {
   return (
     <div className={"project-card"}>

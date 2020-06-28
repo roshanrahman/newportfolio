@@ -3,6 +3,10 @@ import AppBar from "./components/items/AppBar";
 import HomeSection from "./components/layouts/HomeSection";
 import DesignProjectsSection from "./components/layouts/DesignProjectsSection";
 import CodingProjectsSection from "./components/layouts/CodingProjectsSection";
+import WrittenProjectsSection from "./components/layouts/WrittenProjectsSection";
+import AboutMeSection from "./components/layouts/AboutMeSection";
+import ContactSection from "./components/layouts/ContactSection";
+
 function App() {
   return (
     <div className="App">
@@ -10,7 +14,9 @@ function App() {
       <HomeSection />
       <DesignProjectsSection />
       <CodingProjectsSection />
-      <HomeSection />
+      <WrittenProjectsSection />
+      <AboutMeSection />
+      <ContactSection />
     </div>
   );
 }

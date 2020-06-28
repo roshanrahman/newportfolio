@@ -1,0 +1,107 @@
+@import "../../sass/shared.scss";
+.contact-section {
+  padding: 24px;
+
+  p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0px 24px;
+  }
+  .content {
+    padding: 0px 24px;
+    max-width: 1300px;
+    font-size: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 5rem;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+}
+
+.email-section-mobile {
+  display: none;
+}
+
+.email-section {
+  margin-top: 0px;
+  font-size: 3rem;
+  font-weight: bold;
+
+  span {
+    * {
+      height: 3rem;
+    }
+    color: var(--fg-color);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.title-card {
+  p {
+    color: var(--fg-color);
+    opacity: 0.3;
+    line-height: 0.1rem;
+    font-size: 1.286rem;
+  }
+
+  button {
+    height: 38px;
+    font-weight: normal;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.buttons {
+  display: flex;
+  margin-top: 24px;
+  justify-content: center;
+
+  :first-child {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .email-section-mobile {
+    display: flex;
+    flex-direction: column;
+
+    span > * {
+      width: fit-content;
+      height: 5rem;
+    }
+  }
+  .contact-section > p {
+    font-size: 1.7rem;
+  }
+  .email-section-mobile > * {
+    display: block;
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-around;
+  }
+
+  .email-section {
+    display: none;
+  }
+  .email-section > span {
+    font-size: 4vw;
+    margin: 24px;
+  }
+  sup {
+    display: none;
+  }
+}

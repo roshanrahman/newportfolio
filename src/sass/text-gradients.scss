@@ -29,8 +29,30 @@
   -webkit-text-fill-color: transparent;
 }
 
+.written-gradient {
+  background: radial-gradient(
+    133.5% 133.5% at 133.5% 78%,
+    #cf5d00 0%,
+    #e0b700 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .nitya-gaan-gradient {
   background: radial-gradient(75% 75% at 13% 26%, #ff5b00 0%, #db0e00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-me-gradient {
+  background: radial-gradient(75% 75% at 13% 26%, #0078e8 0%, #02bac4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-gradient {
+  background: radial-gradient(75% 75% at 13% 26%, #ff3f6f 0%, #c72a80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

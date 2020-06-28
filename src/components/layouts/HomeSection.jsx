@@ -42,23 +42,11 @@ class HomeSection extends Component {
               ></IconButton>
             </div>
           </div>
-          <hr />
+          {/* <hr /> */}
           <p style={{ textAlign: "center" }}>
-            A coder turned designer who wants to build well-designed products.
+            A coder turned designer who wants to build heart-winning products.
           </p>
           <p> I dual-wield VS Code and Figma.</p>
-          <Spacer />
-          <div className="bottom">
-            <p>
-              Scroll down to read more about me, or{" "}
-              <span className="primary-gradient">get in touch</span>
-            </p>
-            <IconButton
-              icon={"arrow-down-circled"}
-              color="var(--light-grey)"
-              size="40px"
-            ></IconButton>
-          </div>
         </div>
       </section>
     );

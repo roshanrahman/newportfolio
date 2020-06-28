@@ -1,5 +1,9 @@
 @import "../../sass/shared.scss";
 
+.app-bar-mobile {
+  display: none;
+}
+
 .app-bar {
   z-index: 900;
   background-color: var(--bg-color);
@@ -46,7 +50,31 @@
 }
 
 @media screen and (max-width: 900px) {
+  .app-bar {
+    display: none;
+  }
+
+  .app-bar-mobile {
+    display: flex;
+    z-index: 900;
+    background-color: var(--bg-color);
+    height: 80px;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+  }
   .link-item {
     display: none;
+  }
+
+  .app-bar {
+    button {
+      height: 36px;
+    }
   }
 }

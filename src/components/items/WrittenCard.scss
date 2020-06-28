@@ -1,0 +1,72 @@
+@import "../../sass/shared.scss";
+
+.written-card {
+  transition: 0.2s all ease;
+  display: flex;
+  margin-bottom: 48px;
+  text-decoration: none;
+  color: var(--fg-color);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  max-height: 125px;
+  background-color: var(--elevated-color);
+  overflow: hidden;
+
+  img {
+    max-width: 125px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .text-section {
+    flex: 1;
+    margin-left: 24px;
+    align-self: center;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    color: var(--dark-grey);
+  }
+  .icon {
+    padding: 12px;
+  }
+}
+
+.written-card:hover {
+  box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 660px) {
+  .written-card {
+    display: block;
+    height: fit-content;
+    max-height: 100%;
+    width: 100%;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .text-section {
+      max-width: 100%;
+      margin: 24px;
+      padding: 0;
+    }
+
+    .icon {
+      display: none;
+    }
+  }
+}
