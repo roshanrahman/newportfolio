@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/newportfolio/static/css/main.ec9480fc.chunk.css",
+    "main.js": "/newportfolio/static/js/main.11b3cedf.chunk.js",
+    "main.js.map": "/newportfolio/static/js/main.11b3cedf.chunk.js.map",
+    "runtime-main.js": "/newportfolio/static/js/runtime-main.6870a5fc.js",
+    "runtime-main.js.map": "/newportfolio/static/js/runtime-main.6870a5fc.js.map",
+    "static/js/2.760d64c6.chunk.js": "/newportfolio/static/js/2.760d64c6.chunk.js",
+    "static/js/2.760d64c6.chunk.js.map": "/newportfolio/static/js/2.760d64c6.chunk.js.map",
+    "index.html": "/newportfolio/index.html",
+    "precache-manifest.b8b5bd8d3c470267a45f8103d970f8b1.js": "/newportfolio/precache-manifest.b8b5bd8d3c470267a45f8103d970f8b1.js",
+    "service-worker.js": "/newportfolio/service-worker.js",
+    "static/css/main.ec9480fc.chunk.css.map": "/newportfolio/static/css/main.ec9480fc.chunk.css.map",
+    "static/js/2.760d64c6.chunk.js.LICENSE.txt": "/newportfolio/static/js/2.760d64c6.chunk.js.LICENSE.txt",
+    "static/media/email-dark.f8bb3deb.svg": "/newportfolio/static/media/email-dark.f8bb3deb.svg",
+    "static/media/email-mob-dark.b585abb1.svg": "/newportfolio/static/media/email-mob-dark.b585abb1.svg",
+    "static/media/email-mob.abb57146.svg": "/newportfolio/static/media/email-mob.abb57146.svg",
+    "static/media/email.b733324a.svg": "/newportfolio/static/media/email.b733324a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6870a5fc.js",
+    "static/js/2.760d64c6.chunk.js",
+    "static/css/main.ec9480fc.chunk.css",
+    "static/js/main.11b3cedf.chunk.js"
+  ]
+}
