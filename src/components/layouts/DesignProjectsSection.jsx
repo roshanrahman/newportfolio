@@ -12,7 +12,25 @@ class DesignProjectsSection extends Component {
     return (
       <section className="projects-section">
         <div className="grid">
-          <div className="grid-item title-card">
+          <div className="grid-item title-card nomobile">
+            <h1>
+              <span className="design-gradient">Design</span> projects
+            </h1>
+            <p>You'll also find some stuff on my </p>
+            <a href="https://dribbble.com" target="_blank">
+              <Button
+                textSize="1.286rem"
+                otherClasses="shadow-dribbble"
+                color="var(--dribbble-color)"
+                rounded
+                icon="dribbble-outlined"
+                shadowColor="var(--dribbble-color)"
+              >
+                Dribbble Profile
+              </Button>
+            </a>
+          </div>
+          <div className="grid-item title-card nodesktop mobile-block">
             <h1>
               <span className="design-gradient">Design</span> projects
             </h1>
@@ -35,6 +53,22 @@ class DesignProjectsSection extends Component {
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
+          <div className="grid-item title-card nodesktop mobile-block">
+            <div className="spacer" style={{ marginTop: "48px" }}></div>
+            <p>You'll also find some stuff on my </p>
+            <a href="https://dribbble.com" target="_blank">
+              <Button
+                textSize="1.286rem"
+                otherClasses="shadow-dribbble"
+                color="var(--dribbble-color)"
+                rounded
+                icon="dribbble-outlined"
+                shadowColor="var(--dribbble-color)"
+              >
+                Dribbble Profile
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
     );

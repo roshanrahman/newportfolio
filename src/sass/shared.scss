@@ -73,6 +73,10 @@ section {
   max-width: 840px;
 }
 
+.nodesktop {
+  display: none;
+}
+
 @media screen and (max-width: $tablet-width) {
   .nomobile {
     display: none;

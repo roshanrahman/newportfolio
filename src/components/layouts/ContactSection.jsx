@@ -12,6 +12,7 @@ import { ReactComponent as EmailDarkSvg } from "../../assets/email-dark.svg";
 import { ReactComponent as EmailMobileSvg } from "../../assets/email-mob.svg";
 import { ReactComponent as EmailMobileDarkSvg } from "../../assets/email-mob-dark.svg";
 import SocialButtonsList from "../items/SocialButtonsList";
+import { AiOutlineMail } from "react-icons/ai";
 
 class ContactSection extends Component {
   render() {
@@ -25,9 +26,38 @@ class ContactSection extends Component {
         <p>
           I'd love to hear about exciting projects and great teams I can be a
           part of
+          <div className="grid">
+            <div className="item">
+              <div className="card">
+                <h1>
+                  <AiOutlineMail />
+                </h1>
+                <h2>Send me an email</h2>
+              </div>
+              <div className="sub"></div>
+            </div>
+            <div className="item">
+              <div className="card primary">
+                <h1>
+                  <AiOutlineMail />
+                </h1>
+                <h2>Send me an email</h2>
+              </div>
+              <div className="sub">or click here to copy</div>
+            </div>
+            <div className="item">
+              <div className="card">
+                <h1>
+                  <AiOutlineMail />
+                </h1>
+                <h2>Send me an email</h2>
+              </div>
+              <div className="sub"></div>
+            </div>
+          </div>
         </p>
-        <p>Shoot me an email about anything at</p>
-        <p className="email-section">
+        {/* <p>Shoot me an email about anything at</p> */}
+        {/* <p className="email-section">
           <span title="Click to copy email">
             <EmailSvg
               className="light-only"
@@ -53,8 +83,8 @@ class ContactSection extends Component {
               Open Email App
             </Button>
           </div>
-        </p>
-        <p className="email-section-mobile">
+        </p> */}
+        {/* <p className="email-section-mobile">
           <span title="Click to copy email">
             <EmailMobileSvg
               className="light-only"
@@ -81,8 +111,8 @@ class ContactSection extends Component {
               Copy Email
             </Button>
           </div>
-        </p>
-        <SocialButtonsList />
+        </p> */}
+        <SocialButtonsList size="4rem" spacing="30px" />
         {/* <div className="content">
           
         </div> */}
