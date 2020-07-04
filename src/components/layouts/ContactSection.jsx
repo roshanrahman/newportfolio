@@ -12,7 +12,11 @@ import { ReactComponent as EmailDarkSvg } from "../../assets/email-dark.svg";
 import { ReactComponent as EmailMobileSvg } from "../../assets/email-mob.svg";
 import { ReactComponent as EmailMobileDarkSvg } from "../../assets/email-mob-dark.svg";
 import SocialButtonsList from "../items/SocialButtonsList";
-import { AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlineMail,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 
 class ContactSection extends Component {
   render() {
@@ -28,30 +32,41 @@ class ContactSection extends Component {
           part of
           <div className="grid">
             <div className="item">
-              <div className="card">
-                <h1>
-                  <AiOutlineMail />
-                </h1>
-                <h2>Send me an email</h2>
-              </div>
+              <a
+                href="https://www.linkedin.com/in/roshanrahman6399/"
+                target="_blank"
+              >
+                <div className="card">
+                  <h1>
+                    <AiFillLinkedin />
+                  </h1>
+                  <h2>Reach out on Linkedin</h2>
+                </div>
+              </a>
               <div className="sub"></div>
             </div>
-            <div className="item">
-              <div className="card primary">
-                <h1>
-                  <AiOutlineMail />
-                </h1>
-                <h2>Send me an email</h2>
+            <div className="item first-on-mobile">
+              <a href="mailto:roshanrahman6399@gmail.com">
+                <div className="card primary">
+                  <h1>
+                    <AiOutlineMail />
+                  </h1>
+                  <h2>Send me an email</h2>
+                </div>
+              </a>
+              <div className="sub">
+                or <span className="copy-text">click here to copy it</span>
               </div>
-              <div className="sub">or click here to copy</div>
             </div>
             <div className="item">
-              <div className="card">
-                <h1>
-                  <AiOutlineMail />
-                </h1>
-                <h2>Send me an email</h2>
-              </div>
+              <a href="https://twitter.com/roshan6399">
+                <div className="card">
+                  <h1>
+                    <AiOutlineTwitter />
+                  </h1>
+                  <h2>Message me on Twitter</h2>
+                </div>
+              </a>
               <div className="sub"></div>
             </div>
           </div>

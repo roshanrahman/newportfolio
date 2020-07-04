@@ -28,6 +28,9 @@
     .item {
       margin: 16px;
 
+      a {
+        text-decoration: none;
+      }
       .card {
         padding: 12px;
         border-radius: 16px;
@@ -67,7 +70,13 @@
         margin-top: 16px;
         margin-left: 32px;
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        color: #eb3298;
+      }
+
+      .copy-text:hover {
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
@@ -120,6 +129,17 @@
 }
 
 @media screen and (max-width: $mobile-width) {
+  .first-on-mobile {
+    order: -1;
+  }
+  .grid {
+    row-gap: 0px;
+    column-gap: 0px;
+    .item {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
   .email-section-mobile {
     display: flex;
     flex-direction: column;
@@ -131,6 +151,12 @@
   }
   .contact-section > p {
     font-size: 1.7rem;
+  }
+  .contact-section {
+    h1 {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
   .email-section-mobile > * {
     display: block;

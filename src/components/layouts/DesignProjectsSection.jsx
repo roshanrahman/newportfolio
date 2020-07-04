@@ -30,23 +30,10 @@ class DesignProjectsSection extends Component {
               </Button>
             </a>
           </div>
-          <div className="grid-item title-card nodesktop mobile-block">
+          <div className="nodesktop mobile-block mobile-title-card">
             <h1>
               <span className="design-gradient">Design</span> projects
             </h1>
-            <p>You'll also find some stuff on my </p>
-            <a href="https://dribbble.com" target="_blank">
-              <Button
-                textSize="1.286rem"
-                otherClasses="shadow-dribbble"
-                color="var(--dribbble-color)"
-                rounded
-                icon="dribbble-outlined"
-                shadowColor="var(--dribbble-color)"
-              >
-                Dribbble Profile
-              </Button>
-            </a>
           </div>
           <ProjectCard />
           <ProjectCard />

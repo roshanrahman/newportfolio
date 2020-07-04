@@ -1,6 +1,8 @@
 @import "src/sass/shared.scss";
 
 .social-buttons-list {
+    flex-wrap: wrap;
+    justify-content: center;
   li {
     display: flex;
     align-items: center;
