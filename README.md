@@ -1,3 +1,6 @@
+# Roshan's Portfolio
+![Build status indicator](https://travis-ci.com/roshanrahman/newportfolio.svg?branch=master)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
