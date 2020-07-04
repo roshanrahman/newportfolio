@@ -69,7 +69,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $mobile-width) {
   .email-section-mobile {
     display: flex;
     flex-direction: column;

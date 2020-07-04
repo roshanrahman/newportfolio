@@ -1,3 +1,5 @@
+@import "src/sass/shared.scss";
+
 .written-section {
   h1 {
     font-size: 5rem;
@@ -25,7 +27,7 @@
   }
 }
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: $tablet-width) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -35,7 +37,7 @@
   }
 }
 
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: $mobile-width) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -70,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $tablet-width) {
   .content {
     flex-wrap: wrap;
     .col {
@@ -79,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $mobile-width) {
   .content {
     flex-wrap: wrap;
     .col {

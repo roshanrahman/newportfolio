@@ -3,7 +3,6 @@ import "../../sass/text-gradients.scss";
 import "./HomeSection.scss";
 import IconButton from "../items/buttons/IconButton";
 import { openLink } from "../../utils/browser";
-import Spacer from "../items/Spacer";
 
 class HomeSection extends Component {
   render() {

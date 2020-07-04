@@ -1,3 +1,5 @@
+@import "src/sass/shared.scss";
+
 h1 {
   margin: 0px;
   padding: 0px;
@@ -40,6 +42,7 @@ hr {
     }
 
     .primary-gradient {
+      background-clip: none;
       -webkit-background-clip: none;
       -webkit-text-fill-color: var(--fg-color);
       color: var(--fg-color);
@@ -65,14 +68,14 @@ hr {
   margin-top: 20px;
 
   p {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 3rem;
     padding: 0;
     margin-bottom: 12px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: $mobile-width) {
   .bottom {
     display: none;
   }
@@ -105,8 +108,8 @@ hr {
   .home-section {
     margin-top: 30px;
     h1 {
-      font-size: 16vw;
-      line-height: 6rem;
+      font-size: 15vw;
+      line-height: 100%;
     }
 
     p {

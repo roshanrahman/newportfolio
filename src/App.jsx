@@ -10,7 +10,7 @@ import ContactSection from "./components/layouts/ContactSection";
 function App() {
   return (
     <div className="App">
-      <AppBar />
+      {/* <AppBar /> */}
       <HomeSection />
       <DesignProjectsSection />
       <CodingProjectsSection />
