@@ -4,18 +4,22 @@
 $dark: #121212;
 $light: #fff;
 
-$header-size: 400px;
+$header-size: 60vh;
 $readable-width: 1080px;
 
 $dark-gradient: linear-gradient(
   to bottom,
   rgba($dark, 0) 0%,
+  rgba($dark, 0.2) 20%,
+  rgba($dark, 0.7) 60%,
   rgba($dark, 1) 80%,
   rgba($dark, 1) 100%
 );
 $light-gradient: linear-gradient(
   to bottom,
   rgba($light, 0) 0%,
+  rgba($light, 0.2) 20%,
+  rgba($light, 0.7) 60%,
   rgba($light, 1) 80%,
   rgba($light, 1) 100%
 );
@@ -63,31 +67,35 @@ $light-gradient: linear-gradient(
       * {
         max-width: $readable-width;
         margin: 0 auto;
-        text-align: center;
       }
       h1 {
+        text-align: start;
+        max-width: $readable-width;
+        width: 100%;
         font-size: 5rem;
         font-weight: 900;
         margin-bottom: 32px;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 2.6rem;
         font-weight: 300;
       }
     }
   }
 
+  hr {
+    max-width: 200px;
+    margin: 8rem auto;
+  }
   article {
     max-width: $readable-width;
     width: 100%;
     margin: 0 auto;
-    margin-top: 8rem;
     font-size: 2rem;
-
+    color: var(--fg-color);
     h1 {
       font-size: 3.4rem;
     }
-    
   }
 
   @media screen and (max-width: $tablet-width) {
