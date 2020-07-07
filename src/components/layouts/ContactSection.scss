@@ -132,14 +132,7 @@
   .first-on-mobile {
     order: -1;
   }
-  .grid {
-    row-gap: 0px;
-    column-gap: 0px;
-    .item {
-      margin: 0px;
-      padding: 0px;
-    }
-  }
+
   .email-section-mobile {
     display: flex;
     flex-direction: column;
@@ -153,6 +146,14 @@
     font-size: 1.7rem;
   }
   .contact-section {
+    > .grid {
+      row-gap: 0px;
+      column-gap: 0px;
+      .item {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
     h1 {
       margin-top: 32px;
       margin-bottom: 32px;

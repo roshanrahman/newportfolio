@@ -6,6 +6,7 @@ import CodingProjectsSection from "./components/layouts/CodingProjectsSection";
 import WrittenProjectsSection from "./components/layouts/WrittenProjectsSection";
 import AboutMeSection from "./components/layouts/AboutMeSection";
 import ContactSection from "./components/layouts/ContactSection";
+import Footer from "./components/items/Footer";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <WrittenProjectsSection />
       <AboutMeSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

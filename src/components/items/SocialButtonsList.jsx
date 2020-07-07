@@ -51,7 +51,7 @@ function SocialButtonsList(props) {
           <AiOutlineMail />
         </a>
       </li>
-      <li style={style}>
+      <li style={{...style, marginRight: "0px"}}>
         <a href="https://twitter.com/roshan6399">
           <AiOutlineTwitter title="Twitter link" />
         </a>

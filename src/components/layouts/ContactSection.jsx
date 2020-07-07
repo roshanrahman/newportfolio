@@ -127,7 +127,7 @@ class ContactSection extends Component {
             </Button>
           </div>
         </p> */}
-        <SocialButtonsList size="4rem" spacing="30px" />
+        {/* <SocialButtonsList size="4rem" spacing="30px" /> */}
         {/* <div className="content">
           
         </div> */}

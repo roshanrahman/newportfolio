@@ -33,6 +33,36 @@ $light-gradient: linear-gradient(
 }
 
 .case-study {
+  > footer {
+    padding-top: 48px;
+  }
+
+  .header-mobile {
+    display: none;
+    img {
+      width: 100%;
+      max-height: 250px;
+    }
+
+    .title {
+      padding: 24px;
+
+      h1 {
+        margin-top: 18px;
+        font-size: 3.6rem;
+        font-weight: 900;
+      }
+
+      h2 {
+        margin-top: 30px;
+        font-weight: lighter;
+        font-size: 1.7rem;
+        line-height: 150%;
+        opacity: 0.7;
+      }
+    }
+  }
+
   .header {
     height: $header-size;
     max-height: $header-size;
@@ -79,50 +109,85 @@ $light-gradient: linear-gradient(
       h2 {
         font-size: 2.6rem;
         font-weight: 300;
+        opacity: 0.7;
       }
     }
   }
 
   hr {
     max-width: 200px;
-    margin: 8rem auto;
+    margin: 7rem auto;
   }
   article {
     max-width: $readable-width;
     width: 100%;
+    padding-bottom: 48px;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.65;
     color: var(--fg-color);
+
     h1 {
       font-size: 3.4rem;
     }
-  }
 
-  @media screen and (max-width: $tablet-width) {
-    .header {
-      .title {
-        * {
-          padding: 0px 48px;
-          max-width: 100%;
-        }
-      }
+    li {
+      margin: 16px 0px;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: var(--secondary-color);
+    }
+
+    img {
+      max-width: $readable-width;
+      border-radius: 16px;
     }
   }
+}
 
-  @media screen and (max-width: 760px) {
+@media screen and (max-width: $tablet-width) {
+  .case-study {
+    display: block;
+    hr {
+      display: block;
+      width: 500px;
+      margin: 2rem auto;
+    }
     .header {
-      .title {
-        * {
-          padding: 0px 24px;
-          max-width: 100%;
-        }
+      display: none;
+    }
 
-        h1 {
-          font-size: 3rem;
-        }
-        h2 {
-          font-size: 1.4rem;
-        }
+    .header-mobile {
+      display: block;
+    }
+
+    article {
+      width: inherit;
+      padding: 24px;
+      padding-bottom: 48px;
+      font-size: 1.4rem;
+
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 130%;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 16px;
       }
     }
   }

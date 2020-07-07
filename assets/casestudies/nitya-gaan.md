@@ -1,7 +1,3 @@
-# Project Title
-
-One Paragraph of project description goes here
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -14,11 +10,84 @@ What things you need to install the software and how to install them
 
 A step by step series of examples that tell you how to get a development env running
 
+```javascript
+
+var hash = require('hash-sum');
+var uniq = require('lodash.uniq');
+
+var VueSSRClientPlugin = function VueSSRClientPlugin (options) {
+  if ( options === void 0 ) options = {};
+
+  this.options = Object.assign({
+    filename: 'vue-ssr-client-manifest.json'
+  }, options);
+};
+
+VueSSRClientPlugin.prototype.apply = function apply (compiler) {
+    var this$1 = this;
+
+  onEmit(compiler, 'vue-client-plugin', function (compilation, cb) {
+    var stats = compilation.getStats().toJson();
+
+
+```
+
 Say what the step will be
 
 And repeat
 
 End with an example of getting some data out of the system or using it for a little demo
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+```js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+Right aligned columns
+
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Running the tests
 
