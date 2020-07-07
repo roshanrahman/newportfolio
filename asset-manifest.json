@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/newportfolio/static/css/main.e6f79807.chunk.css",
-    "main.js": "/newportfolio/static/js/main.313137ed.chunk.js",
-    "main.js.map": "/newportfolio/static/js/main.313137ed.chunk.js.map",
+    "main.css": "/newportfolio/static/css/main.21692958.chunk.css",
+    "main.js": "/newportfolio/static/js/main.16ec96ed.chunk.js",
+    "main.js.map": "/newportfolio/static/js/main.16ec96ed.chunk.js.map",
     "runtime-main.js": "/newportfolio/static/js/runtime-main.6870a5fc.js",
     "runtime-main.js.map": "/newportfolio/static/js/runtime-main.6870a5fc.js.map",
-    "static/js/2.686467a9.chunk.js": "/newportfolio/static/js/2.686467a9.chunk.js",
-    "static/js/2.686467a9.chunk.js.map": "/newportfolio/static/js/2.686467a9.chunk.js.map",
+    "static/js/2.b01b652d.chunk.js": "/newportfolio/static/js/2.b01b652d.chunk.js",
+    "static/js/2.b01b652d.chunk.js.map": "/newportfolio/static/js/2.b01b652d.chunk.js.map",
     "index.html": "/newportfolio/index.html",
-    "precache-manifest.6585b07fc57b0dea9961568f98f0c8b0.js": "/newportfolio/precache-manifest.6585b07fc57b0dea9961568f98f0c8b0.js",
+    "precache-manifest.17a6c5c3c426da0ac0dcc70e8d06fcf2.js": "/newportfolio/precache-manifest.17a6c5c3c426da0ac0dcc70e8d06fcf2.js",
     "service-worker.js": "/newportfolio/service-worker.js",
-    "static/css/main.e6f79807.chunk.css.map": "/newportfolio/static/css/main.e6f79807.chunk.css.map",
-    "static/js/2.686467a9.chunk.js.LICENSE.txt": "/newportfolio/static/js/2.686467a9.chunk.js.LICENSE.txt",
+    "static/css/main.21692958.chunk.css.map": "/newportfolio/static/css/main.21692958.chunk.css.map",
+    "static/js/2.b01b652d.chunk.js.LICENSE.txt": "/newportfolio/static/js/2.b01b652d.chunk.js.LICENSE.txt",
     "static/media/email-dark.f8bb3deb.svg": "/newportfolio/static/media/email-dark.f8bb3deb.svg",
     "static/media/email-mob-dark.b585abb1.svg": "/newportfolio/static/media/email-mob-dark.b585abb1.svg",
     "static/media/email-mob.abb57146.svg": "/newportfolio/static/media/email-mob.abb57146.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6870a5fc.js",
-    "static/js/2.686467a9.chunk.js",
-    "static/css/main.e6f79807.chunk.css",
-    "static/js/main.313137ed.chunk.js"
+    "static/js/2.b01b652d.chunk.js",
+    "static/css/main.21692958.chunk.css",
+    "static/js/main.16ec96ed.chunk.js"
   ]
 }
