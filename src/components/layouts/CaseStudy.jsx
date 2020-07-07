@@ -23,6 +23,8 @@ class CaseStudy extends Component {
   render() {
     return (
       <div className={"case-study"}>
+        <button className="floating-dark-toggle">Toggle Dark Mode</button>
+
         <div className="header-mobile">
           <div className="image">
             <img

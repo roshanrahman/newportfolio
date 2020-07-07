@@ -42,6 +42,21 @@ $light-gradient: linear-gradient(
   }
 }
 
+.floating-dark-toggle {
+  position: fixed;
+  z-index: 1000000;
+  margin: 24px;
+
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.356);
+  border: none;
+  color: var(--fg-color);
+  font-size: 1rem;
+  font-weight: 500;
+
+  backdrop-filter: blur(8px);
+}
 .case-study {
   > footer {
     padding-top: 48px;
