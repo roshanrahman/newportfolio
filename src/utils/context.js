@@ -14,12 +14,15 @@ window
   });
 
 export function checkIfSystemDarkMode() {
+  console.log(window.matchMedia);
   if (
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
+    console.info("Dark theme detected on OS");
     return true;
   }
+  console.info("Light theme detected on OS");
   return false;
 }
 

@@ -25,6 +25,16 @@ $light-gradient: linear-gradient(
 );
 
 [data-theme="dark"] {
+  @media screen and (max-width: $tablet-width) {
+    * {
+      color: rgb(199, 199, 199);
+    }
+
+    h1 {
+      color: #fff;
+    }
+  }
+
   .header {
     .gradient {
       background: $dark-gradient !important;
@@ -127,6 +137,9 @@ $light-gradient: linear-gradient(
     line-height: 1.65;
     color: var(--fg-color);
 
+    * {
+      max-width: $readable-width;
+    }
     h1 {
       font-size: 3.4rem;
     }
@@ -176,6 +189,22 @@ $light-gradient: linear-gradient(
       padding: 24px;
       padding-bottom: 48px;
       font-size: 1.4rem;
+
+      table {
+        border: 2px solid var(--divider-color);
+        border-radius: 16px;
+        padding: 8px;
+
+        > * {
+          border: 2px solid red;
+        }
+      }
+
+      pre,
+      code {
+        font-size: 90%;
+        overflow: scroll;
+      }
 
       h2,
       h3,
