@@ -8,15 +8,15 @@
 // match the expected interface, even if the JSON is valid.
 
 export interface ProjectData {
-  slug: string;
-  absoluteUrl: string;
-  rootUrl: string;
-  title: string;
-  description: string;
-  coverImage: string;
-  smallImage: string;
-  type: string;
-  color: string;
+  slug?: string;
+  absoluteUrl?: string;
+  rootUrl?: string;
+  title?: string;
+  description?: string;
+  coverImage?: string;
+  smallImage?: string;
+  type?: string;
+  color?: string;
 }
 
 // Converts JSON strings to/from your types
@@ -174,15 +174,15 @@ function r(name: string) {
 const typeMap: any = {
   ProjectData: o(
     [
-      { json: "slug", js: "slug", typ: "" },
-      { json: "absoluteUrl", js: "absoluteUrl", typ: "" },
-      { json: "rootUrl", js: "rootUrl", typ: "" },
-      { json: "title", js: "title", typ: "" },
-      { json: "description", js: "description", typ: "" },
-      { json: "coverImage", js: "coverImage", typ: "" },
-      { json: "smallImage", js: "smallImage", typ: "" },
-      { json: "type", js: "type", typ: "" },
-      { json: "color", js: "color", typ: "" },
+      { json: "slug", js: "slug", typ: u(undefined, "") },
+      { json: "absoluteUrl", js: "absoluteUrl", typ: u(undefined, "") },
+      { json: "rootUrl", js: "rootUrl", typ: u(undefined, "") },
+      { json: "title", js: "title", typ: u(undefined, "") },
+      { json: "description", js: "description", typ: u(undefined, "") },
+      { json: "coverImage", js: "coverImage", typ: u(undefined, "") },
+      { json: "smallImage", js: "smallImage", typ: u(undefined, "") },
+      { json: "type", js: "type", typ: u(undefined, "") },
+      { json: "color", js: "color", typ: u(undefined, "") },
     ],
     false
   ),

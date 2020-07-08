@@ -16,9 +16,7 @@ function App() {
           of them to render at a time
         */}
           <Switch>
-            <Route path="/dashboard">
-              <CaseStudy />
-            </Route>
+            <Route exact path="/projects/:slug" component={CaseStudy} />
             <Route path="/">
               <Home />
             </Route>

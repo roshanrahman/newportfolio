@@ -5,25 +5,34 @@ import "./CaseStudy.scss";
 import Axios from "axios";
 import Footer from "../items/Footer";
 import DarkModeToggle from "../items/DarkModeToggle";
-import { getProjectList } from "../../utils/getProjects";
+import {
+  getProjectList,
+  getProjectDetailsBySlug,
+} from "../../utils/getProjects";
 class CaseStudy extends Component {
+  slug = "";
   constructor(props) {
     super(props);
+    this.slug = this.props.match.params.slug;
     this.state = {
-      data: "> Loading...",
+      loading: true,
+      project: {},
+      data: "",
     };
-    getProjectList();
   }
-  componentWillMount = () => {
-    Axios.get(
-      "https://raw.githubusercontent.com/roshanrahman/newportfolio/master/assets/casestudies/nitya-gaan.md"
-    ).then((result) => {
-      this.setState({
-        data: result.data,
-      });
-    });
+  componentWillMount = async () => {
+    const project = await getProjectDetailsBySlug(this.slug);
+    const article = Axios.get(project.absoluteUrl);
+    this.setState({ ...this.state, project, loading: false, data: article });
+  };
+
+  renderLoadingComponent = () => {
+    return <div>Hello</div>;
   };
   render() {
+    if (this.state.loading) {
+      return this.renderLoadingComponent();
+    }
     return (
       <div className={"case-study"}>
         <div className="floating-dark-toggle">
@@ -68,7 +77,7 @@ class CaseStudy extends Component {
         </div>
         <hr />
         <article>
-          <ReactMarkdown linkTarget="_blank" source={this.state.data} />
+          <ReactMarkdown linkTarget="_blank" source={this.state.project} />
         </article>
         <Footer />
       </div>
