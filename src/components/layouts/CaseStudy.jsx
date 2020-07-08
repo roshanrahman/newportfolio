@@ -5,12 +5,14 @@ import "./CaseStudy.scss";
 import Axios from "axios";
 import Footer from "../items/Footer";
 import DarkModeToggle from "../items/DarkModeToggle";
+import { getProjectList } from "../../utils/getProjects";
 class CaseStudy extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: "> Loading...",
     };
+    getProjectList();
   }
   componentWillMount = () => {
     Axios.get(

@@ -1,2 +1,0 @@
-const MASTER_URL = "";
-

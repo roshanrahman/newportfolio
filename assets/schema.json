@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/ProjectDatum"
+  },
+  "definitions": {
+    "ProjectDatum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "absoluteUrl": {
+          "type": "string"
+        },
+        "rootUrl": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "coverImage": {
+          "type": "string"
+        },
+        "smallImage": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "absoluteUrl",
+        "color",
+        "coverImage",
+        "description",
+        "rootUrl",
+        "slug",
+        "smallImage",
+        "title",
+        "type"
+      ],
+      "title": "ProjectDatum"
+    }
+  }
+}
