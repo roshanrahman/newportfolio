@@ -5,7 +5,7 @@ $dark: #121212;
 $light: #fff;
 
 $header-size: 60vh;
-$readable-width: 1080px;
+$readable-width: 950px;
 
 $dark-gradient: linear-gradient(
   to bottom,
@@ -43,20 +43,42 @@ $light-gradient: linear-gradient(
 }
 
 .floating-dark-toggle {
-  position: fixed;
-  z-index: 1000000;
+  button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    padding: 4px;
+    height: 3rem;
+    width: 3rem;
+    line-height: 50%;
+    color: white;
+    border-radius: 50px;
+  }
+  position: absolute;
+  z-index: 1000000 !important;
   margin: 24px;
-
-  padding: 12px 24px;
+  right: 0px;
   border-radius: 50px;
-  background: rgba(0, 0, 0, 0.356);
+  background: rgba(0, 0, 0, 0.7);
   border: none;
   color: var(--fg-color);
   font-size: 1rem;
   font-weight: 500;
-
-  backdrop-filter: blur(8px);
 }
+
+.image-shadow {
+  position: absolute;
+  top: 48px;
+  z-index: -100;
+  filter: blur(24px);
+  opacity: 0.6;
+  text-align: center;
+  img {
+    margin: 0 auto;
+    width: 85% !important;
+  }
+}
+
 .case-study {
   > footer {
     padding-top: 48px;
@@ -67,6 +89,7 @@ $light-gradient: linear-gradient(
     img {
       width: 100%;
       max-height: 250px;
+      object-fit: cover;
     }
 
     .title {
@@ -95,10 +118,12 @@ $light-gradient: linear-gradient(
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
-
+    padding: 0;
+    margin: 0;
     > * {
       position: absolute;
       top: 0;
+      left: 0;
       height: $header-size;
       max-height: $header-size;
       overflow: hidden;
@@ -107,6 +132,17 @@ $light-gradient: linear-gradient(
 
     .image {
       z-index: 200;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 100%;
+      img {
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        border: none;
+      }
     }
     .gradient {
       z-index: 300;
@@ -132,7 +168,7 @@ $light-gradient: linear-gradient(
         margin-bottom: 32px;
       }
       h2 {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
         font-weight: 300;
         opacity: 0.7;
       }
@@ -209,10 +245,6 @@ $light-gradient: linear-gradient(
         border: 2px solid var(--divider-color);
         border-radius: 16px;
         padding: 8px;
-
-        > * {
-          border: 2px solid red;
-        }
       }
 
       pre,

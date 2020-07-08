@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import "./CaseStudy.scss";
 import Axios from "axios";
 import Footer from "../items/Footer";
+import DarkModeToggle from "../items/DarkModeToggle";
 class CaseStudy extends Component {
   constructor(props) {
     super(props);
@@ -23,15 +24,22 @@ class CaseStudy extends Component {
   render() {
     return (
       <div className={"case-study"}>
-        <button className="floating-dark-toggle">Toggle Dark Mode</button>
-
+        <div className="floating-dark-toggle">
+          <DarkModeToggle />
+        </div>
         <div className="header-mobile">
           <div className="image">
             <img
-              src="https://images.unsplash.com/photo-1559420516-8be4f1c1984f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+              src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
               alt=""
             />
           </div>
+          {/* <div className="image-shadow">
+            <img
+              src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              alt=""
+            />
+          </div> */}
           <div className="title">
             <h1>Redesigning Nitya Gaan</h1>
             <h2>
@@ -43,7 +51,7 @@ class CaseStudy extends Component {
         <div className="header">
           <div className="image">
             <img
-              src="https://images.unsplash.com/photo-1559420516-8be4f1c1984f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+              src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
               alt=""
             />
           </div>

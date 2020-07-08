@@ -1,0 +1,13 @@
+@import "src/sass/shared.scss";
+
+.dark-toggle {
+  cursor: pointer;
+  font-size: 2rem;
+  border: none;
+  padding: 4px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50px;
+  background: none;
+  color: var(--fg-color);
+}
