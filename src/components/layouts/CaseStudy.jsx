@@ -29,13 +29,22 @@ class CaseStudy extends Component {
 
   getProjectDetails = async (slug) => {
     const project = await getProjectDetailsBySlug(this.slug);
-    console.log(project);
     const articleData = await Axios.get(project.articleUrl);
-    console.log(articleData);
+    this.setState({
+      project,
+      data: articleData.data,
+      loading: false,
+    });
+    document.title = project.title;
   };
 
   renderLoadingComponent = () => {
-    return <div>Hello</div>;
+    return (
+      <div className="loading">
+        <h2>Loading Case Study</h2>
+        <h3>This shouldn't take too long</h3>
+      </div>
+    );
   };
 
   render() {
@@ -50,8 +59,8 @@ class CaseStudy extends Component {
         <div className="header-mobile">
           <div className="image">
             <img
-              src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              alt=""
+              src={this.state.project.coverImage}
+              alt="Cover Image for illustration purpose"
             />
           </div>
           {/* <div className="image-shadow">
@@ -61,18 +70,15 @@ class CaseStudy extends Component {
             />
           </div> */}
           <div className="title">
-            <h1>Redesigning Nitya Gaan</h1>
-            <h2>
-              A redesign project to give this handy app a makeover that
-              empathizes with its users better
-            </h2>
+            <h1>{this.state.project.articleTitle}</h1>
+            <h2>{this.state.project.description}</h2>
           </div>
         </div>
         <div className="header">
           <div className="image">
             <img
-              src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-              alt=""
+              src={this.state.project.coverImage}
+              alt="Cover Image for illustration purpose"
             />
           </div>
           <div className="gradient"></div>

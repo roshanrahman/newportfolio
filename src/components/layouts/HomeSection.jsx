@@ -3,6 +3,7 @@ import "../../sass/text-gradients.scss";
 import "./HomeSection.scss";
 import IconButton from "../items/buttons/IconButton";
 import { openLink } from "../../utils/browser";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 class HomeSection extends Component {
   render() {
@@ -10,9 +11,15 @@ class HomeSection extends Component {
       <section className="home-section">
         <div className="hero">
           <div className="hero-text">
-            <h1>
+            <h1 className="nomobile">
               Hi! <br />
-              I'm <span className="primary-gradient">Roshan</span>
+              I'm <span className="about-me-gradient">Roshan</span>
+            </h1>
+            <h1
+              className="nodesktop mobile-block"
+              style={{ textAlign: "center" }}
+            >
+              Hi! I am <span className="about-me-gradient">Roshan</span>
             </h1>
             <div className="social-buttons">
               <IconButton
@@ -46,6 +53,7 @@ class HomeSection extends Component {
             A coder turned designer who wants to build heart-winning products.
           </p>
           <p> I dual-wield VS Code and Figma.</p>
+          <AiOutlineArrowDown className="arrow" />
         </div>
       </section>
     );

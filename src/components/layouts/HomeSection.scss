@@ -11,10 +11,6 @@ h1 {
   margin: -10px 0px;
   opacity: 0;
   transition: 0.2s all ease;
-
- 
-
-
 }
 
 .hero-text:hover {
@@ -34,14 +30,18 @@ hr {
 [data-theme="dark"] {
   .home-section {
     h1 {
-      color: var(--primary-color);
+      color: rgb(255, 255, 255);
+      
+
+      span {
+        text-shadow: 0px 0px 0px rgba(0, 109, 172, 0);
+      }
     }
 
-    .primary-gradient {
-      background-clip: none;
-      -webkit-background-clip: none;
-      -webkit-text-fill-color: var(--fg-color);
-      color: var(--fg-color);
+    .about-me-gradient {
+      background: radial-gradient(75% 75% at 13% 26%, #00c3ff 0%, #00e1ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
@@ -54,6 +54,10 @@ hr {
     font-size: 10rem;
     line-height: 136px;
     margin-bottom: 12px;
+
+    span {
+      text-shadow: 0px 16px 16px rgba(0, 162, 255, 0.2);
+    }
   }
   display: flex;
   flex-direction: column;
@@ -63,9 +67,14 @@ hr {
 .home-section {
   margin-top: 20px;
 
-  p {
-    font-weight: normal;
+  .arrow {
+    opacity: 0.4;
+    margin-top: 54px;
     font-size: 3rem;
+  }
+  p {
+    font-weight: 300;
+    font-size: 2.7rem;
     padding: 0;
     margin-bottom: 12px;
   }
@@ -99,19 +108,21 @@ hr {
 
   .hero-text {
     margin-bottom: 0;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   .home-section {
-    margin-top: 30px;
+    margin-top: 48px;
     h1 {
-      font-size: 15vw;
+      font-size: 5rem;
       line-height: 100%;
     }
 
     p {
       text-align: center;
-      font-size: 1.6rem;
-      line-height: 2rem;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
     }
   }
 }

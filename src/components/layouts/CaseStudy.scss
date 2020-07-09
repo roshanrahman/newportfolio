@@ -26,12 +26,14 @@ $light-gradient: linear-gradient(
 
 [data-theme="dark"] {
   @media screen and (max-width: $tablet-width) {
-    * {
-      color: rgb(199, 199, 199);
-    }
+    .case-study {
+      * {
+        color: rgb(199, 199, 199);
+      }
 
-    h1 {
-      color: #fff;
+      h1 {
+        color: #fff;
+      }
     }
   }
 
@@ -266,5 +268,26 @@ $light-gradient: linear-gradient(
         border-radius: 16px;
       }
     }
+  }
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--fg-color);
+  text-align: center;
+
+  h2 {
+    margin: 0px;
+    opacity: 0.3;
+    font-size: 2rem;
+  }
+
+  h3 {
+    opacity: 0.3;
+    font-size: 1.4rem;
+    font-weight: 400;
   }
 }

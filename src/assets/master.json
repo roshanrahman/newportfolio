@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "articleUrl": "https://raw.githubusercontent.com/roshanrahman/newportfolio/master/assets/casestudies/nitya-gaan.md",
+      "coverImage": "https://images.unsplash.com/photo-1566035932399-ae6279104153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+      "description": "A redesign project to give this handy app a makeover that empathizes with its users better",
+      "title": "Nitya Gaan",
+      "articleTitle": "Redesigning Nitya Gaan",
+      "type": "design",
+      "color": "",
+      "demoUrl": "",
+      "githubUrl": "",
+      "otherUrls": [{ "title": "", "url": "s" }],
+      "slug": "nitya-gaan",
+      "smallImage": "https://images.unsplash.com/photo-1566035932399-ae6279104153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      "articleUrl": "https://raw.githubusercontent.com/roshanrahman/newportfolio/master/assets/casestudies/nitya-gaan.md",
+      "coverImage": "https://images.unsplash.com/photo-1566035932399-ae6279104153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+      "description": "A redesign project to give this handy app a makeover that empathizes with its users better",
+      "title": "Electronics Emart",
+      "articleTitle": "Redesigning Nitya Gaan",
+      "type": "design",
+      "color": "",
+      "demoUrl": "",
+      "githubUrl": "",
+      "otherUrls": [{ "title": "", "url": "s" }],
+      "slug": "electronics-emart",
+      "smallImage": "https://images.unsplash.com/photo-1566035932399-ae6279104153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      "articleUrl": "https://raw.githubusercontent.com/roshanrahman/newportfolio/master/assets/casestudies/nitya-gaan.md",
+      "coverImage": "https://images.unsplash.com/photo-1566035932399-ae6279104153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+      "description": "A redesign project to give this handy app a makeover that empathizes with its users better",
+      "title": "Shiksha Foundation",
+      "articleTitle": "Redesigning Nitya Gaan",
+      "type": "design",
+      "color": "",
+      "demoUrl": "",
+      "githubUrl": "",
+      "otherUrls": [{ "title": "", "url": "s" }],
+      "slug": "electronics-emart",
+      "smallImage": "https://images.unsplash.com/photo-1566035932399-ae6279104153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    }
+  ]
+}

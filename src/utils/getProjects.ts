@@ -1,26 +1,10 @@
 import { ProjectData, Convert } from "./ProjectData";
 import Axios from "axios";
 
+const backupProjectList = require("../assets/master.json");
+
 export const MASTER_URL =
   "https://raw.githubusercontent.com/roshanrahman/newportfolio/ts/assets/master.json";
-
-const backupProjectList = `
-{
-  "projects": [
-    {
-      "slug": "nitya-gaan",
-      "absoluteUrl": "https://google.com/",
-      "rootUrl": "",
-      "title": "",
-      "description": "",
-      "coverImage": "",
-      "smallImage": "",
-      "type": "",
-      "color": ""
-    }
-  ]
-}
-`;
 
 export async function getProjectList(): Promise<ProjectData[]> {
   let projectData = [];
@@ -62,8 +46,8 @@ export function produceRandomProjectData(): ProjectData {
     otherUrls: [
       {
         title: "",
-        url: "s"
-      }
+        url: "s",
+      },
     ],
     slug: "",
     smallImage: "",
