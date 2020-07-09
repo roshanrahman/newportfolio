@@ -8,27 +8,36 @@ import DarkModeToggle from "../items/DarkModeToggle";
 import {
   getProjectList,
   getProjectDetailsBySlug,
+  produceRandomProjectData,
 } from "../../utils/getProjects";
+
 class CaseStudy extends Component {
   slug = "";
+
   constructor(props) {
     super(props);
     this.slug = this.props.match.params.slug;
+
     this.state = {
       loading: true,
       project: {},
       data: "",
     };
+
+    this.getProjectDetails(this.slug);
   }
-  componentWillMount = async () => {
+
+  getProjectDetails = async (slug) => {
     const project = await getProjectDetailsBySlug(this.slug);
-    const article = Axios.get(project.absoluteUrl);
-    this.setState({ ...this.state, project, loading: false, data: article });
+    console.log(project);
+    const articleData = await Axios.get(project.articleUrl);
+    console.log(articleData);
   };
 
   renderLoadingComponent = () => {
     return <div>Hello</div>;
   };
+
   render() {
     if (this.state.loading) {
       return this.renderLoadingComponent();
@@ -77,7 +86,7 @@ class CaseStudy extends Component {
         </div>
         <hr />
         <article>
-          <ReactMarkdown linkTarget="_blank" source={this.state.project} />
+          <ReactMarkdown linkTarget="_blank" source={this.state.data} />
         </article>
         <Footer />
       </div>
