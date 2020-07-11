@@ -9,6 +9,9 @@ import ProjectCard from "../items/ProjectCard";
 
 class CodingProjectsSection extends Component {
   render() {
+    if (this.props.projects.length < 1) {
+      return "";
+    }
     return (
       <section className="projects-section">
         <div className="grid">
@@ -35,11 +38,18 @@ class CodingProjectsSection extends Component {
               <span className="coding-gradient">Coding</span> projects
             </h1>
           </div>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {this.props.projects.map((project) => {
+            return (
+              <ProjectCard
+                image={project.smallImage}
+                slug={project.slug}
+                title={project.title}
+                description={project.description}
+                github={project.github}
+                color={project.color}
+              />
+            );
+          })}
           <div className="grid-item title-card nodesktop mobile-block">
             <div className="spacer" style={{ marginTop: "48px" }}></div>
 

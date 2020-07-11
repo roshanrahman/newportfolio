@@ -9,6 +9,9 @@ import ProjectCard from "../items/ProjectCard";
 
 class DesignProjectsSection extends Component {
   render() {
+    if (this.props.projects.length < 1) {
+      return "";
+    }
     return (
       <section className="projects-section">
         <div className="grid">
@@ -17,7 +20,7 @@ class DesignProjectsSection extends Component {
               <span className="design-gradient">Design</span> projects
             </h1>
             <p>You'll also find some stuff on my </p>
-            <a href="https://dribbble.com" target="_blank">
+            <a href="https://dribbble.com/roshan6399" target="_blank">
               <Button
                 textSize="1.286rem"
                 otherClasses="shadow-dribbble"
@@ -36,7 +39,6 @@ class DesignProjectsSection extends Component {
             </h1>
           </div>
           {this.props.projects.map((project) => {
-            console.info(project);
             return (
               <ProjectCard
                 image={project.smallImage}
@@ -51,7 +53,7 @@ class DesignProjectsSection extends Component {
           <div className="grid-item title-card nodesktop mobile-block">
             <div className="spacer" style={{ marginTop: "48px" }}></div>
             <p>You'll also find some stuff on my </p>
-            <a href="https://dribbble.com" target="_blank">
+            <a href="https://dribbble.com/roshan6399" target="_blank">
               <Button
                 textSize="1.286rem"
                 otherClasses="shadow-dribbble"
