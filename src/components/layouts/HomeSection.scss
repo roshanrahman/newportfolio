@@ -31,7 +31,6 @@ hr {
   .home-section {
     h1 {
       color: rgb(255, 255, 255);
-      
 
       span {
         text-shadow: 0px 0px 0px rgba(0, 109, 172, 0);
@@ -39,7 +38,9 @@ hr {
     }
 
     .about-me-gradient {
-      background: radial-gradient(75% 75% at 13% 26%, #00c3ff 0%, #00e1ff 100%);
+      background: radial-gradient(75% 75% at 13% 26%, #5db1ff 0%, #44f3fc 100%);
+
+      // background: radial-gradient(75% 75% at 13% 26%, #a8ceff 0%, #00ccff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }

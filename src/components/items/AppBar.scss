@@ -4,10 +4,30 @@
   display: none;
 }
 
+.left {
+  button {
+    background: none;
+    border: 2px solid transparent;
+    font-size: 1.8rem;
+    padding: 2px;
+    height: 3rem;
+    width: 3rem;
+    color: var(--fg-color);
+    border-radius: 50px !important;
+    cursor: pointer;
+    line-height: 2rem;
+  }
+
+  button:focus {
+    outline: none;
+    border: 2px solid grey;
+  }
+}
+
 .app-bar {
   z-index: 900;
-  background-color: var(--bg-color);
-  height: 80px;
+  background-color: #fafafaa9;
+  height: 64px;
   right: 0;
   left: 0;
   top: 0;
@@ -17,6 +37,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 50px;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
   button {
     height: 32px;
   }
@@ -32,7 +54,11 @@
     }
 
     .link-item {
+      border: none;
+      background: transparent;
       font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
       text-transform: uppercase;
       color: var(--fg-color);
       text-decoration: none;
@@ -50,6 +76,9 @@
 }
 
 [data-theme="dark"] {
+  .app-bar {
+    background-color: #12121296;
+  }
   .app-bar-mobile {
     background-color: #12121296;
   }
@@ -57,6 +86,26 @@
 @media screen and (max-width: $mobile-width) {
   .app-bar {
     display: none;
+  }
+
+  .left {
+    button {
+      background: none;
+      border: 2px solid transparent;
+      font-size: 1.8rem;
+      padding: 2px;
+      height: 3rem;
+      width: 3rem;
+      color: var(--fg-color);
+      border-radius: 50px !important;
+      cursor: pointer;
+      line-height: 3rem;
+    }
+
+    button:focus {
+      outline: none;
+      border: 2px solid grey;
+    }
   }
 
   .app-bar-mobile {

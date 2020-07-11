@@ -1,50 +1,57 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./AppBar.scss";
 import { toggleDarkTheme, isDarkTheme } from "../../utils/context";
 import Button from "./buttons/Button";
+import DarkModeToggle from "./DarkModeToggle";
 
-function AppBar() {
+function AppBar(props) {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div>
       <header className="app-bar">
         <div className="left">
-          <Button
-            outlined
-            rounded
-            icon={"bulb-fill"}
-            onPressed={toggleDarkTheme}
-          >
-            Toggle Dark Mode
-          </Button>
+          <DarkModeToggle className="dark-toggle" />
         </div>
         <div className="right">
-          <a href="" className="link-item">
-            Portfolio
-          </a>
-          <a href="" className="link-item">
-            Skills
-          </a>
-          <a href="" className="link-item">
+          <button
+            onClick={() => {
+              props.onNavIntent("home");
+            }}
+            className="link-item"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => {
+              props.onNavIntent("design");
+            }}
+            className="link-item"
+          >
+            Projects
+          </button>
+          <button
+            onClick={() => {
+              props.onNavIntent("aboutMe");
+            }}
+            className="link-item"
+          >
             About me
-          </a>
-          <a href="" className="link-item">
-            Contact
-          </a>
-          <Button rounded gradient="primary">
-            EMAIL ME
+          </button>
+          <Button
+            onClicked={() => {
+              props.onNavIntent("contact");
+            }}
+            otherClasses="shadow-secondary"
+            color="var(--secondary-color)"
+            rounded
+          >
+            CONTACT
           </Button>
         </div>
       </header>
       <header className="app-bar-mobile">
         <div className="left">
-          <Button
-            outlined
-            rounded
-            icon={"bulb-fill"}
-            onPressed={toggleDarkTheme}
-          >
-            Toggle Dark Mode
-          </Button>
+          <DarkModeToggle className="dark-toggle" />
         </div>
         <div className="right">
           <a href="" className="link-item">
@@ -59,8 +66,15 @@ function AppBar() {
           <a href="" className="link-item">
             Contact
           </a>
-          <Button rounded gradient="primary">
-            EMAIL ME
+          <Button
+            onClicked={() => {
+              props.onNavIntent("contact");
+            }}
+            otherClasses="shadow-secondary"
+            color="var(--secondary-color)"
+            rounded
+          >
+            CONTACT ME
           </Button>
         </div>
       </header>

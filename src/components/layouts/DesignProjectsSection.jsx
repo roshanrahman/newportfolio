@@ -35,11 +35,19 @@ class DesignProjectsSection extends Component {
               <span className="design-gradient">Design</span> projects
             </h1>
           </div>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {this.props.projects.map((project) => {
+            console.info(project);
+            return (
+              <ProjectCard
+                image={project.smallImage}
+                slug={project.slug}
+                title={project.title}
+                description={project.description}
+                github={project.github}
+                color={project.color}
+              />
+            );
+          })}
           <div className="grid-item title-card nodesktop mobile-block">
             <div className="spacer" style={{ marginTop: "48px" }}></div>
             <p>You'll also find some stuff on my </p>

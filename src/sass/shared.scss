@@ -1,11 +1,10 @@
 $mobile-width: 800px;
 $tablet-width: 1025px;
 
-
 :root {
   --font-family: "Inter", sans-serif;
-  --primary-color: #3455ff;
-  --secondary-color: #00109c;
+  --primary-color: #008cff;
+  --secondary-color: #0066ff;
   --fg-color: #121212;
   --bg-color: #fff;
   --dark-grey: rgb(163, 163, 163);
@@ -25,8 +24,8 @@ $tablet-width: 1025px;
 }
 
 [data-theme="dark"] {
-  --primary-color: #8c9fff;
-  --secondary-color: #4053ff;
+  --primary-color: #008cff;
+  --secondary-color: #257cff;
   --fg-color: #fafafa;
   --bg-color: #121212;
   --dark-grey: rgb(165, 165, 165);

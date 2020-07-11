@@ -53,7 +53,12 @@ class HomeSection extends Component {
             A coder turned designer who wants to build heart-winning products.
           </p>
           <p> I dual-wield VS Code and Figma.</p>
-          <AiOutlineArrowDown className="arrow" />
+          <AiOutlineArrowDown
+            onClick={() => {
+              this.props.onNavIntent("design");
+            }}
+            className="arrow"
+          />
         </div>
       </section>
     );

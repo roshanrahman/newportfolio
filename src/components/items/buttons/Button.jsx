@@ -78,7 +78,7 @@ function Button(props) {
     <button
       style={computedStyle(props)}
       className={createClassNames(props)}
-      onClick={props.onPressed}
+      onClick={props.onClicked}
     >
       {renderContent(props)}
     </button>
@@ -89,7 +89,7 @@ Button.propTypes = {
   icon: PropTypes.string,
   gradient: PropTypes.string,
   color: PropTypes.string,
-  onPressed: PropTypes.func.isRequired,
+  onClicked: PropTypes.func.isRequired,
   rounded: PropTypes.bool,
   otherClasses: PropTypes.string,
   textSize: PropTypes.string,

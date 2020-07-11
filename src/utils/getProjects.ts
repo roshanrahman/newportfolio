@@ -54,3 +54,7 @@ export function produceRandomProjectData(): ProjectData {
   };
   return obj;
 }
+
+export function openCaseStudy(slug: string) {
+  window.open(`/projects/${slug}`, "_blank");
+}

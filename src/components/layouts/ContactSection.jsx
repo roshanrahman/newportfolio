@@ -12,6 +12,8 @@ import { ReactComponent as EmailDarkSvg } from "../../assets/email-dark.svg";
 import { ReactComponent as EmailMobileSvg } from "../../assets/email-mob.svg";
 import { ReactComponent as EmailMobileDarkSvg } from "../../assets/email-mob-dark.svg";
 import SocialButtonsList from "../items/SocialButtonsList";
+import copy from "copy-to-clipboard";
+
 import {
   AiOutlineMail,
   AiFillLinkedin,
@@ -55,7 +57,16 @@ class ContactSection extends Component {
                 </div>
               </a>
               <div className="sub">
-                or <span className="copy-text">click here to copy it</span>
+                or{" "}
+                <span
+                  onClick={() => {
+                    copy("roshanrahman6399@gmail.com");
+                    window.alert("Email address copied to your clipboard.");
+                  }}
+                  className="copy-text"
+                >
+                  click here to copy it
+                </span>
               </div>
             </div>
             <div className="item">
