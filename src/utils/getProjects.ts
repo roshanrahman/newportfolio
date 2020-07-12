@@ -4,7 +4,7 @@ import Axios from "axios";
 const backupProjectList = require("../assets/master.json");
 
 export const MASTER_URL =
-  "https://raw.githubusercontent.com/roshanrahman/newportfolio/ts/assets/master.json";
+  "https://raw.githubusercontent.com/roshanrahman/newportfolio/master/assets/master.json";
 
 export async function getProjectList(): Promise<ProjectData[]> {
   let projectData = [];
