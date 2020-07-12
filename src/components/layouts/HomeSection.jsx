@@ -28,7 +28,7 @@ class HomeSection extends Component {
                 }}
                 size="30px"
                 icon={"twitter-fill"}
-                color="var(--primary-color)"
+                color="#44f3fc"
               ></IconButton>
               <IconButton
                 onPressed={() => {
@@ -36,7 +36,7 @@ class HomeSection extends Component {
                 }}
                 size="30px"
                 icon={"github-fill"}
-                color="var(--primary-color)"
+                color="#44f3fc"
               ></IconButton>
               <IconButton
                 onPressed={() => {
@@ -44,7 +44,7 @@ class HomeSection extends Component {
                 }}
                 size="30px"
                 icon={"email-outlined"}
-                color="var(--primary-color)"
+                color="#44f3fc"
               ></IconButton>
             </div>
           </div>
@@ -57,6 +57,7 @@ class HomeSection extends Component {
             onClick={() => {
               this.props.onNavIntent("design");
             }}
+            style={{ cursor: "pointer" }}
             className="arrow"
           />
         </div>

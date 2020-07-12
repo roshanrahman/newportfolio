@@ -46,7 +46,6 @@ class CodingProjectsSection extends Component {
                 title={project.title}
                 description={project.description}
                 github={project.github}
-                color={project.color}
               />
             );
           })}

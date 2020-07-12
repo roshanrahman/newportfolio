@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import AppBar from "./components/items/AppBar";
 import HomeSection from "./components/layouts/HomeSection";
 import DesignProjectsSection from "./components/layouts/DesignProjectsSection";

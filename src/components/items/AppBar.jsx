@@ -1,11 +1,9 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import "./AppBar.scss";
-import { toggleDarkTheme, isDarkTheme } from "../../utils/context";
 import Button from "./buttons/Button";
 import DarkModeToggle from "./DarkModeToggle";
 
 function AppBar(props) {
-  const [isOpen, setOpen] = useState(false);
   return (
     <div>
       <header className="app-bar">
@@ -54,18 +52,6 @@ function AppBar(props) {
           <DarkModeToggle className="dark-toggle" />
         </div>
         <div className="right">
-          <a href="" className="link-item">
-            Portfolio
-          </a>
-          <a href="" className="link-item">
-            Skills
-          </a>
-          <a href="" className="link-item">
-            About me
-          </a>
-          <a href="" className="link-item">
-            Contact
-          </a>
           <Button
             onClicked={() => {
               props.onNavIntent("contact");

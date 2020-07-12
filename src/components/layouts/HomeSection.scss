@@ -11,6 +11,15 @@ h1 {
   margin: -10px 0px;
   opacity: 0;
   transition: 0.2s all ease;
+
+  * {
+    margin-right: 10px;
+    color: #02bac4;
+  }
+
+  *:last-child {
+    margin-right: 0px;
+  }
 }
 
 .hero-text:hover {
@@ -94,6 +103,7 @@ hr {
     transform: scale(1.4);
 
     * {
+      color: #44f3fc;
       margin-right: 24px;
     }
 
