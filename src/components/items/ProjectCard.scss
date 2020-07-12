@@ -32,10 +32,16 @@
     font-weight: normal;
     line-height: 1.527rem;
     margin-bottom: 24px;
+    flex: 100;
+    display: block;
+    height: 100% !important;
   }
 
   .text-section {
     margin: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 
   .actions {
