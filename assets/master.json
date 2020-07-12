@@ -97,6 +97,34 @@
       "githubUrl": "",
       "otherUrls": [{ "title": "", "url": "s" }],
       "slug": "hospital-django"
+    },
+    {
+      "title": "Fonts are fascinating",
+      "articleTitle": "Fonts are fascinating",
+      "description": "uxdesign.cc",
+      "articleUrl": "https://uxdesign.cc/fonts-are-fascinating-bb154596cb",
+      "smallImage": "https://miro.medium.com/max/1000/0*gEjZfiggCJ7gg3Z3",
+      "coverImage": "https://miro.medium.com/max/1000/0*gEjZfiggCJ7gg3Z3",
+      "type": "article",
+      "color": "#ff7e47",
+      "demoUrl": "",
+      "githubUrl": "",
+      "otherUrls": [{ "title": "", "url": "s" }],
+      "slug": "article-fonts"
+    },
+    {
+      "title": "Python helped me get Avengers: Endgame tickets",
+      "articleTitle": "Python helped me get Avengers: Endgame tickets",
+      "description": "medium.com",
+      "articleUrl": "https://medium.com/@roshan6399/python-helped-me-get-avengers-endgame-tickets-d9f5644f1759",
+      "smallImage": "https://miro.medium.com/max/2160/1*pu8DeFWEnLTF0jcDCUuDFg.jpeg",
+      "coverImage": "https://miro.medium.com/max/2160/1*pu8DeFWEnLTF0jcDCUuDFg.jpeg",
+      "type": "article",
+      "color": "#ff7e47",
+      "demoUrl": "",
+      "githubUrl": "",
+      "otherUrls": [{ "title": "", "url": "s" }],
+      "slug": "article-python"
     }
   ]
 }
