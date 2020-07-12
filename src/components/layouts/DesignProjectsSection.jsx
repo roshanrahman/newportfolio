@@ -45,7 +45,7 @@ class DesignProjectsSection extends Component {
                 image={project.smallImage}
                 slug={project.slug}
                 title={project.title}
-                description={project.description}
+                description={project.shortDescription}
                 github={project.github}
               />
             );

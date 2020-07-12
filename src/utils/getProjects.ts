@@ -43,6 +43,7 @@ export function produceRandomProjectData(): ProjectData {
     color: "",
     demoUrl: "",
     githubUrl: "",
+    shortDescription: "",
     otherUrls: [
       {
         title: "",

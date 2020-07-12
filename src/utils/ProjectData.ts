@@ -16,6 +16,7 @@ export interface ProjectData {
   title: string;
   articleTitle?: string;
   description: string;
+  shortDescription: string;
   coverImage: string;
   smallImage?: string;
   type: string;
