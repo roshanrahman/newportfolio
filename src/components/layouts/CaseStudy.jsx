@@ -83,11 +83,8 @@ class CaseStudy extends Component {
           </div>
           <div className="gradient"></div>
           <div className="title">
-            <h1>Redesigning Nitya Gaan</h1>
-            <h2>
-              A redesign project to give this handy app a makeover that
-              empathizes with its users better
-            </h2>
+            <h1>{this.state.project.articleTitle}</h1>
+            <h2>{this.state.project.description}</h2>
           </div>
         </div>
         <hr />
