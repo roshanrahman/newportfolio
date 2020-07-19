@@ -74,7 +74,19 @@ class Home extends React.Component {
     }
   };
 
+  renderLoadingComponent = () => {
+    return (
+      <div className="loading">
+        <h2>Loading website</h2>
+        <h3>This shouldn't take too long</h3>
+      </div>
+    );
+  };
+
   render() {
+    if (this.state.loading) {
+      return this.renderLoadingComponent();
+    }
     return (
       <div className="App">
         <AppBar
