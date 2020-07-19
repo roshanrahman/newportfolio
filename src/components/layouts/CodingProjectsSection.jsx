@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import "../../sass/text-gradients.scss";
-import "./CodingProjectsSection.scss";
-import IconButton from "../items/buttons/IconButton";
-import { openLink } from "../../utils/browser";
-import Spacer from "../items/Spacer";
 import Button from "../items/buttons/Button";
 import ProjectCard from "../items/ProjectCard";
+import "./CodingProjectsSection.scss";
 
 class CodingProjectsSection extends Component {
   render() {
@@ -20,7 +17,7 @@ class CodingProjectsSection extends Component {
               <span className="coding-gradient">Coding</span> projects
             </h1>
             <p>You'll also find some stuff on my </p>
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <Button
                 textSize="1.286rem"
                 otherClasses="shadow-github"
@@ -53,7 +50,7 @@ class CodingProjectsSection extends Component {
             <div className="spacer" style={{ marginTop: "48px" }}></div>
 
             <p>You'll also find some stuff on my </p>
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <Button
                 textSize="1.286rem"
                 otherClasses="shadow-github"

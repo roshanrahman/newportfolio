@@ -1,15 +1,10 @@
+import Axios from "axios";
 import React, { Component } from "react";
 import ReactMarkdown from "react-markdown";
-import PropTypes from "prop-types";
-import "./CaseStudy.scss";
-import Axios from "axios";
-import Footer from "../items/Footer";
+import { getProjectDetailsBySlug } from "../../utils/getProjects";
 import DarkModeToggle from "../items/DarkModeToggle";
-import {
-  getProjectList,
-  getProjectDetailsBySlug,
-  produceRandomProjectData,
-} from "../../utils/getProjects";
+import Footer from "../items/Footer";
+import "./CaseStudy.scss";
 
 class CaseStudy extends Component {
   slug = "";
@@ -60,7 +55,7 @@ class CaseStudy extends Component {
           <div className="image">
             <img
               src={this.state.project.coverImage}
-              alt="Cover Image for illustration purpose"
+              alt="Some illustration related to the project"
             />
           </div>
           {/* <div className="image-shadow">
@@ -78,7 +73,7 @@ class CaseStudy extends Component {
           <div className="image">
             <img
               src={this.state.project.coverImage}
-              alt="Cover Image for illustration purpose"
+              alt="Some illustration related to the project"
             />
           </div>
           <div className="gradient"></div>

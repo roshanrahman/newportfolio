@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   AiOutlineBulb,
   AiFillMail,
@@ -40,6 +40,8 @@ function resolveIcon(props) {
       return <AiOutlineDribbble {...props} />;
     case "arrow-down-circled":
       return <FiArrowDownCircle {...props} />;
+      default:
+        return <div>Does not exist</div>;
   }
 }
 

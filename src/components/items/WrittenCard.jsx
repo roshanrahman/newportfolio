@@ -1,9 +1,8 @@
-import React from "react";
-import "./WrittenCard.scss";
-import { AiOutlineAlert, AiOutlineLink } from "react-icons/ai";
-import { RiExternalLinkLine } from "react-icons/ri";
-
 import PropTypes from "prop-types";
+import React from "react";
+import { RiExternalLinkLine } from "react-icons/ri";
+import "./WrittenCard.scss";
+
 
 WrittenCard.propTypes = {
   img: PropTypes.string.isRequired,
@@ -14,7 +13,7 @@ WrittenCard.propTypes = {
 
 export default function WrittenCard(props) {
   return (
-    <a className="written-card" href={`${props.link}`} target="_blank">
+    <a className="written-card" href={`${props.link}`} target="_blank" rel="noopener noreferrer">
       <img src={`${props.img}`} alt="" />
       <div className="text-section">
         <h2>{props.title}</h2>

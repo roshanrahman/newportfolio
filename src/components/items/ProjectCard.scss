@@ -5,10 +5,12 @@
   flex-direction: column;
   border-radius: 16px;
   max-width: 350px;
+  margin: 0 auto;
+  max-height: 450px;
   overflow: hidden;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   background-color: var(--elevated-color);
-  transition: 0.15s box-shadow ease;
+  transition: 0.15s all ease;
 
   img {
     max-height: 150px;
@@ -50,17 +52,25 @@
     margin-bottom: 16px;
     margin-right: 8px;
 
-    a {
+    span {
       font-size: 1.286rem;
       font-weight: bold;
       text-decoration: none;
-      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: var(--dark-grey);
+      transition: 0.15s all ease;
+
     }
   }
 }
 
 .project-card:hover {
   box-shadow: 0px 18px 24px rgba(0, 0, 0, 0.08);
+
+  span {
+    color: var(--primary-color);
+  }
 }
 
 .clickable {

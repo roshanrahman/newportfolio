@@ -1,9 +1,8 @@
 import React from "react";
-import "./ProjectCard.scss";
 import "../../sass/text-gradients.scss";
-
-import PropTypes from "prop-types";
 import { openCaseStudy } from "../../utils/getProjects";
+import "./ProjectCard.scss";
+
 
 export default function ProjectCard(props) {
   return (
@@ -15,7 +14,7 @@ export default function ProjectCard(props) {
       }}
       className={`project-card ${props.slug ? "clickable" : ""}`}
     >
-      <img src={`${props.image}`} alt={`Image about ${props.title}`} />
+      <img src={`${props.image}`} alt={`${props.title}`} />
       <div className="text-section">
         <h2
           style={{
@@ -24,7 +23,7 @@ export default function ProjectCard(props) {
         >{`${props.title}`}</h2>
         <p>{`${props.description}`}</p>
         <div className="actions">
-          <a href="">Read Case Study</a>
+          <span>Read Case Study</span>
         </div>
       </div>
     </div>

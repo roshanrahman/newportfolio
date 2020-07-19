@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import "../../sass/text-gradients.scss";
-import "./WrittenProjectsSection.scss";
-import IconButton from "../items/buttons/IconButton";
-import { openLink } from "../../utils/browser";
-import Spacer from "../items/Spacer";
-import Button from "../items/buttons/Button";
-import ProjectCard from "../items/ProjectCard";
 import WrittenCard from "../items/WrittenCard";
+import "./WrittenProjectsSection.scss";
 
 class WrittenProjectsSection extends Component {
   render() {

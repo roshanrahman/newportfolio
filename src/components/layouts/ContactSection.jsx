@@ -1,24 +1,13 @@
+import copy from "copy-to-clipboard";
 import React, { Component } from "react";
+import {
+  AiFillLinkedin, AiOutlineMail,
+
+  AiOutlineTwitter
+} from "react-icons/ai";
 import "../../sass/text-gradients.scss";
 import "./ContactSection.scss";
-import IconButton from "../items/buttons/IconButton";
-import { openLink } from "../../utils/browser";
-import Spacer from "../items/Spacer";
-import Button from "../items/buttons/Button";
-import ProjectCard from "../items/ProjectCard";
-import WrittenCard from "../items/WrittenCard";
-import { ReactComponent as EmailSvg } from "../../assets/email.svg";
-import { ReactComponent as EmailDarkSvg } from "../../assets/email-dark.svg";
-import { ReactComponent as EmailMobileSvg } from "../../assets/email-mob.svg";
-import { ReactComponent as EmailMobileDarkSvg } from "../../assets/email-mob-dark.svg";
-import SocialButtonsList from "../items/SocialButtonsList";
-import copy from "copy-to-clipboard";
 
-import {
-  AiOutlineMail,
-  AiFillLinkedin,
-  AiOutlineTwitter,
-} from "react-icons/ai";
 
 class ContactSection extends Component {
   render() {
@@ -37,6 +26,7 @@ class ContactSection extends Component {
               <a
                 href="https://www.linkedin.com/in/roshanrahman6399/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="card">
                   <h1>

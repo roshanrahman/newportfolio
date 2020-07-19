@@ -1,6 +1,9 @@
 @import "src/sass/shared.scss";
 
 footer {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
   background: var(--divider-color);
 
   h3 {
@@ -25,8 +28,16 @@ footer {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    padding-bottom: 48px;
+    padding: 0px 0px 48px 0px;
   }
+}
+
+@media screen and (max-height: 900px) {
+ footer {
+  .content {
+    padding: 48px 0px;
+  }
+ }
 }
 
 @media screen and (max-width: $tablet-width) {

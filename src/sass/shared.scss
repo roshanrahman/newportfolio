@@ -73,6 +73,12 @@ section {
   display: none;
 }
 
+@media screen and (max-height: 900px) {
+  section {
+    border-bottom: transparent;
+  }
+}
+
 @media screen and (max-width: $tablet-width) {
   .nomobile {
     display: none;
