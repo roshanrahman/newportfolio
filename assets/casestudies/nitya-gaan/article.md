@@ -18,13 +18,13 @@ Nitya Gaan is a mobile app that allows users to perform their daily religious ac
 
 Chintan was looking for a designer to help him make the app more user-friendly. When he shared the app to some of his friends and family, he felt that he was having difficulties explaining the interface to them. He wanted it to be intuitive but his users had more questions than he had expected. He was also not pleased with the visual design of the app, and wanted to make it more appealing.
 
----
-
 ## Constraints
 
 - **This project was under a deadline**, as the people who were involved with it only had a few weeks to spare, and Chintan could also give only a month to this project. I had about 2 weeks to finish up the design.
 
 - **Technical constraints**, were to ensure the design was easy to implement based on the standard Google Material Design components available on Android, that could be customized to an extent. The app had to be implemented quickly, and without using custom workarounds.
+
+---
 
 # Capturing pain points in existing app
 
@@ -60,6 +60,8 @@ The reminders were implemented to be similar in appearance to the standard Alarm
 
 - **Boring colors**: The app had a dull dark yellow color scheme.
 - **Outdated look**: The app used the Google Material components that are the default way of implementing interfaces in Android. As a result, the app looked like a generic Material app from 2014 and was not up to current standards.
+
+---
 
 # Understanding the users
 
