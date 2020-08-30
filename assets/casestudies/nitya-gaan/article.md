@@ -10,8 +10,6 @@ Nitya Gaan is a mobile app that allows users to perform their daily religious ac
 - **Alarms for reminding about the daily activities** that the users can enable and set a time for.
 - **Localization In Gujarati**, as the community is largely Gujarati.
 
-## Goals
-
 ---
 
 # The Problem
@@ -81,6 +79,110 @@ To identify what the users expected from the app, I prepared a Google Forms with
 
 ## What we learnt
 
-- Although about 70% of the users had been using their devices in English, and could read English, the remaining 30% of people were more comfortable reading Gujarati and wanted to use devices in Gujarati. Some of them were already using Gujarati as their system language.
+- Although about 70% of the users had been using their devices in English, and could read English, the remaining majority of people were more comfortable reading Gujarati and wanted to use devices in Gujarati. Some of them were already using Gujarati as their system language.
 
--
+- We wanted to evaluate the option of dark theme to increase readability, and as a means to customize the user experience. 58% of the participants responded that they switched to dark themes. Though more than 50% of the participants told us they limited their phone usage to only a few hours a day - and that they avoided using it at night - those who were not familiar with dark theme did like the idea of using a dark theme, especially those who had difficulties reading on their phones with poorly lit surroundings.
+
+- At least 15% of the participants had difficulties reading on their phones, and used larger font size, and a few people used accessibility features, such as magnifier. We wanted to make it easier for users to customize their reading view, to ensure it is as accessible as possible.
+
+---
+
+# The Solution
+
+In this section, I list out the various changes that I made to the interface. This project was designed in Figma.
+
+## My Goals
+
+Before I began designing, I laid out the goals that I wanted the new design to achieve:
+
+- Reduce as many clicks as possible. Keep only the minimal amount of taps needed.
+
+- Avoid using gestures. Keep only button based navigation, and simple scrolls.
+
+- Be more contextual, and ensure it has heuristics that inform the users of the app's state, and wherever possible, allow them to change it.
+
+- Have a cleaner, simpler, modern take on the aesthetics, with a Material styled design that looked good, and was not a nightmare for the developer to implement.
+
+- Increase usability by making items easier to distinguish.
+
+- Provide options to change language, theme and font size at any time. Overall, keep the design open and scalable, so additional features could be added easily.
+
+### ગુજરાતી up front, right on the header
+
+I made the option to change the language into a button, and placed it right next to the App Title.
+
+This way, people don't have to find the option to change language. If they prefer Gujarati, it's the first thing they'll see, and they don't have to struggle going through the English parts to identify where the language setting is. Also, it has a text label so it is less ambiguous than using an icon in its place.
+
+### Single column, colorful list tiles
+
+I changed the 2-column grid into a single column grid, making the direction of flow simpler. No zig-zag pattern here.
+
+I used the idea of a strongly colored background, with a little transculency that revealed a relevant background image. This made it possible to distinguish the item by color, and the background image was also an indicator of what the category is for.
+
+This made it easy for people to communicate which one to go to - For example, _"Click on the red one"_ is easier for people to follow.
+
+### Bigger, bolder reminders
+
+I made the alarm list tiles, i.e. the items that let you set the time for reminders, appear bigger and made the label have thicker font weight.
+
+I turned the popup message into a card-like component sitting on top of the header, which could be dismissed by the user. This was a less intrusive way of guiding the user.
+
+Used gray and white in disabled and enabled states to express the different states better.
+
+The entire space of the time & label area could be tapped to trigger the time picker. Previously it was only possible to tap on the time.
+
+I also redesigned the screens that would popup when it was time for the alarm to ring.
+
+### Contextual components on the home screen
+
+I wanted to make the home screen (the screen with the category list) more dynamic, and display the app's status in a more visible way.
+
+One important app state was the state where a reminder was imminent. If the user was already on the app just before the reminder was about to go off, the firing of the reminder could be cancelled. So, I made a contextual component that would appear when a reminder was just minutes away. The user could then easily cancel that reminder as they're already on the app.
+
+### Customization options in Reading View
+
+I designed a component that contained options that would allow the users to customize the text size, language and theme at any time. This popup component made it possible for users to customize the experience right from the reading view. They didn't have to go to settings to make these changes.
+
+### Visual Design
+
+For the interface design, I chose Lato as the primary typeface for headings. It has several font weights that look very good on the screens. I used the system default Roboto for the text.
+
+I used a vibrant orange pumpkin color (#FF6712) as the primary color, that could be paired with a simple white or dark (#121212) background and foreground colors.
+
+The images used were from Unsplash.com. They were edited and overlayed with a gradient that would fade away just a little, revealing the image underneath it. I used this concept of gradients and images underneath them for the alarm screens as well.
+
+I designed a dark theme as well, with #121212 as the primary background color. As per the Material guidelines, to express elevation, I used lighter shades of grey, such as #858585.
+
+I followed the Material guidelines, and maintained a simple, label on selected item variant of the bottom navigation. As it was difficult to customize soft shadows, I kept the default elevation shadows of Material, and used the default card style, with only the border radius set to a bit higher.
+
+### Branding
+
+I also designed the logo and Play Store assets for the app.
+
+When this design was shown to the various community members, it was well received, and they offered ideas for the logo to go with it. We received an idea that depicted a man in the posture of meditation, with an aura resembling a flower.
+
+I incorporated this idea into an icon, using simple geometric design. I was playing around with the idea of using elements that could be combined into a single image, but could also be displayed separately, creating a brand of apps. This was a fun experience with some basic graphic design.
+
+---
+
+# Outcome
+
+The feedback on the design was positive. People noticed the newer, vibrant look and they expressed that it looked less cluttered. Chintan enthusiastically began implementing it.
+
+On Play Store, the app has received very high ratings, the crisp UX and the quality of content was well appreciated.
+
+Soon, after the redesigned app was published, the community members who really liked the app recommended it to their friends and family, and since then it has received thousands of downloads.
+
+Chintan was approached by many community members suggesting new features to be added to it, and now this project has been opened again, with a new set of features that would make this app a connected, social experience.
+
+## Lessons learnt
+
+- This was my first project in which I did user research which was not limited to asking my friends and family. I learnt to check assumptions against research, with the niche groups of people, as the user research revealed statistics that were quite different from what I had guessed. Reduce bias as much as possible.
+
+- This was also my first time working with a remote developer, and I gained a lot of experience sharing ideas and sending handoffs to him. This increased my confidence in doing freelance and remote work.
+
+- I learnt about usability heuristics.
+
+This was an absolutely fun challenge, and I learnt a lot working on this project. Most importantly, throughout this process, Chintan and I enjoyed working with each other and quickly became good friends, and since then we have worked on many projects together.
+
+---
