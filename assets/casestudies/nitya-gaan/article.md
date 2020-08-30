@@ -79,6 +79,9 @@ To identify what the users expected from the app, I prepared a Google Forms with
 
 ## What we learnt
 
+![Graph of insights showing statistics described below](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img1.png)
+
+
 - Although about 70% of the users had been using their devices in English, and could read English, the remaining majority of people were more comfortable reading Gujarati and wanted to use devices in Gujarati. Some of them were already using Gujarati as their system language.
 
 - We wanted to evaluate the option of dark theme to increase readability, and as a means to customize the user experience. 58% of the participants responded that they switched to dark themes. Though more than 50% of the participants told us they limited their phone usage to only a few hours a day - and that they avoided using it at night - those who were not familiar with dark theme did like the idea of using a dark theme, especially those who had difficulties reading on their phones with poorly lit surroundings.
@@ -109,11 +112,16 @@ Before I began designing, I laid out the goals that I wanted the new design to a
 
 ### ગુજરાતી up front, right on the header
 
+![Mockup showing language button in header](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img2.png)
+
+
 I made the option to change the language into a button, and placed it right next to the App Title.
 
 This way, people don't have to find the option to change language. If they prefer Gujarati, it's the first thing they'll see, and they don't have to struggle going through the English parts to identify where the language setting is. Also, it has a text label so it is less ambiguous than using an icon in its place.
 
 ### Single column, colorful list tiles
+
+![Mockup showing single column, colorful list tiles](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img3.png)
 
 I changed the 2-column grid into a single column grid, making the direction of flow simpler. No zig-zag pattern here.
 
@@ -122,6 +130,9 @@ I used the idea of a strongly colored background, with a little transculency tha
 This made it easy for people to communicate which one to go to - For example, _"Click on the red one"_ is easier for people to follow.
 
 ### Bigger, bolder reminders
+
+![Mockup showing bigger, bolder reminders](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img4.png)
+
 
 I made the alarm list tiles, i.e. the items that let you set the time for reminders, appear bigger and made the label have thicker font weight.
 
@@ -132,6 +143,9 @@ Used gray and white in disabled and enabled states to express the different stat
 The entire space of the time & label area could be tapped to trigger the time picker. Previously it was only possible to tap on the time.
 
 I also redesigned the screens that would popup when it was time for the alarm to ring.
+
+
+![Mockup showing reminder alarm screens](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img5.png)
 
 ### Contextual components on the home screen
 
@@ -149,6 +163,8 @@ For the interface design, I chose Lato as the primary typeface for headings. It 
 
 I used a vibrant orange pumpkin color (#FF6712) as the primary color, that could be paired with a simple white or dark (#121212) background and foreground colors.
 
+![Mockup showing light and dark themes](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img6.png)
+
 The images used were from Unsplash.com. They were edited and overlayed with a gradient that would fade away just a little, revealing the image underneath it. I used this concept of gradients and images underneath them for the alarm screens as well.
 
 I designed a dark theme as well, with #121212 as the primary background color. As per the Material guidelines, to express elevation, I used lighter shades of grey, such as #858585.
@@ -161,7 +177,11 @@ I also designed the logo and Play Store assets for the app.
 
 When this design was shown to the various community members, it was well received, and they offered ideas for the logo to go with it. We received an idea that depicted a man in the posture of meditation, with an aura resembling a flower.
 
+![Screenshot of some icons](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img7.png)
+
 I incorporated this idea into an icon, using simple geometric design. I was playing around with the idea of using elements that could be combined into a single image, but could also be displayed separately, creating a brand of apps. This was a fun experience with some basic graphic design.
+
+![Screenshot of some branding assets](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img8.png)
 
 ---
 
@@ -169,7 +189,7 @@ I incorporated this idea into an icon, using simple geometric design. I was play
 
 The feedback on the design was positive. People noticed the newer, vibrant look and they expressed that it looked less cluttered. Chintan enthusiastically began implementing it.
 
-On Play Store, the app has received very high ratings, the crisp UX and the quality of content was well appreciated.
+On the Google Play Store, the app has received very high ratings, the crisp UX and the quality of content was well appreciated.
 
 Soon, after the redesigned app was published, the community members who really liked the app recommended it to their friends and family, and since then it has received thousands of downloads.
 
