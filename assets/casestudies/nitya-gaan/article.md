@@ -28,6 +28,7 @@ Chintan was looking for a designer to help him make the app more user-friendly. 
 
 Based on my own usage of the app, and through feedback from users that Chintan had collected, the main pain points that caused poor user engagement were identified.
 
+
 ### The option to switch to Gujarati was difficult to see
 
 It had been implemented as a Floating Action Button (FAB) that forked into two buttons on pressing. They could then choose their language by pressing the button with their language's icon on it.
@@ -103,6 +104,8 @@ To identify what the users expected from the app, I prepared a Google Forms with
 # The Solution
 
 In this section, I list out the various changes that I made to the interface. This project was designed in Figma.
+
+*(I wanted to display the Before/After changes but sadly, I was not able to recover screenshots of the old app. I might recreate the old screens myself soon)*
 
 ## My Goals
 
