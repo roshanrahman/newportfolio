@@ -82,7 +82,7 @@ Chintan observed that most of the participants would either carry printed copies
 
 ## User Research
 
-In order to understand the users better, and to eliminate the bias of our own, we reached out to the users with questions. As I was hundreds of miles away from Mumbai, I delegated the interviews to Chintan, who would go to the temples and halls to meet his potential users and talk about the app.
+In order to understand the users better, and to eliminate the bias of our own, we reached out to the users with questions. As I was hundreds of miles away from Mumbai, I delegated the actual interviewing to Chintan, who would go to the temples and halls to meet his potential users and talk about the app.
 
 I made a list of features and approaches that would help achieve the goals of the app. We wanted to sort the features based on relevance an priority, so the app would be less cluttered and would best fit the users' needs.
 
