@@ -65,12 +65,18 @@ The reminders were implemented to be similar in appearance to the standard Alarm
 
 ## Target Audience
 
-This app was intended to be used by all the members of the community. A majority of this community were adults and consisted of people such as:
-Young professionals - natives of the Digital age, these users were Millenials and frequent smartphone users.
-Employed adults - worked in companies, familiar with the internet, and would use computers and phone for work, and the occasional social media.
-Business Owners - Ran their own business, with limited technical ability, but would use a smartphone for basic functions and the occasional social media (WhatsApp & Facebook)
-Retired adults - Senior users who would use a smartphone for basic calling purposes, but were new to the internet and mobile apps. 
-It was safe to assume that most of the community would carry a smartphone, and operate basic apps like WhatsApp.
+This app was intended to be used by all the members of the community. A majority of this community were adults and consisted of people who were:
+
+- Young professionals - natives of the Digital age, these users were Millenials and frequent smartphone users.
+
+- Employed adults - worked in companies, familiar with the internet, and would use computers and phone for work, and the occasional social media.
+
+- Business Owners - Ran their own business, with limited technical ability, but would use a smartphone for basic functions and the occasional social media (WhatsApp & Facebook)
+
+- Retired adults - Senior users who would use a smartphone for basic calling purposes, but were new to the internet and mobile apps. 
+
+
+It was safe to assume that most of the community would carry a smartphone, and operate basic apps like WhatsApp. We wanted to ensure the design had high usability and was accessible enough and easy even for seniors to pick up.
 
 Chintan observed that most of the participants would either carry printed copies and books (which was the case with the more older folk) or use downloaded PDFs and scanned copies. To offer a simpler, easy to use solution, he approached the community organizers to catalogue all the prayers and put them on his app.
 
