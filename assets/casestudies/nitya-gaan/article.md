@@ -92,7 +92,7 @@ To identify what the users expected from the app, I prepared a Google Forms with
 
 ![Graph of insights showing statistics described below](https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/img1.png)
 
-- Although about 70% of the users had been using their devices in English and could read English, the remaining majority of people were more comfortable reading Gujarati and wanted to use devices in Gujarati. Some of them were already using Gujarati as their system language.
+- Although about 70% of the users had been using their devices in English and could read English, the rest were more comfortable reading Gujarati and wanted to use devices in Gujarati. Some of them were already using Gujarati as their system language.
 
 - We wanted to evaluate the option of dark theme to increase readability, and as a means to customize the user experience. 58% of the participants responded that they switched to dark themes. Though more than 50% of the participants told us they limited their phone usage to only a few hours a day - and that they avoided using it at night - those who were not familiar with dark theme did like the idea of using a dark theme, especially those who had difficulties reading on their phones with poorly lit surroundings.
 
