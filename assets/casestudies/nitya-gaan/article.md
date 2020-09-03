@@ -85,9 +85,9 @@ Chintan observed that most of the participants would either carry printed copies
 
 In order to understand the users better, and to eliminate the bias of our own, we reached out to the users with questions. As I was hundreds of miles away from Mumbai, I delegated the actual interviewing to Chintan, who would go to the temples and halls to meet his potential users and talk about the app.
 
-I made a list of features and approaches that would help achieve the goals of the app. We wanted to sort the features based on relevance an priority, so the app would be less cluttered and would best fit the users' needs.
+I made a list of features and approaches that would help achieve the goals of the app. We wanted to sort the features based on relevance and priority, so the app would be less cluttered and would best fit the users' needs.
 
-To identify what the users expected from the app, I prepared a Google Forms with a set of questions asking them about their language preferences, the apps that they used extensively, if they use accessibility features, etc. Chintan would either ask these questions in person or collect responses from the Google Form.
+To identify what the users expected from the app, I prepared a Google Form with a set of questions asking them about their language preferences, the apps that they used extensively, if they use accessibility features, etc. Chintan would either ask these questions in person or collect responses from the Google Form.
 
 ## What we learnt
 
@@ -117,7 +117,7 @@ Before I began designing, I laid out the goals that I wanted the new design to a
 
 - Be more contextual, and ensure it has heuristics that inform the users of the app's state, and wherever possible, allow them to change it.
 
-- Have a cleaner, simpler, modern take on the aesthetics, with a Material, styled design that looked good, and was not a nightmare for the developer to implement.
+- Have a cleaner, simpler, modern take on the aesthetics, with a Material based design that looked good, and was not a nightmare for the developer to implement under a deadline.
 
 - Increase usability by making items easier to distinguish.
 
