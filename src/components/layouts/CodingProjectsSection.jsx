@@ -39,11 +39,11 @@ class CodingProjectsSection extends Component {
             return (
               <ProjectCard
                 image={project.smallImage}
-                url={project.github}
+                url={project.githubUrl}
                 actionText={'View on Github'}
                 title={project.title}
                 description={project.shortDescription}
-                github={project.github}
+                github={project.githubUrl}
               />
             );
           })}
