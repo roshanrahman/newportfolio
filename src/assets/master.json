@@ -86,7 +86,7 @@
       "type": "coding",
       "color": "#ff7e47",
       "demoUrl": "",
-      "githubUrl": "",
+      "githubUrl": "https://github.com/roshanrahman/flutter-notes-app",
       "otherUrls": [{ "title": "", "url": "s" }],
       "slug": "flutter-notes"
     },
@@ -101,7 +101,7 @@
       "type": "coding",
       "color": "#ff7e47",
       "demoUrl": "",
-      "githubUrl": "",
+      "githubUrl": "https://github.com/roshanrahman/hospital-django",
       "otherUrls": [{ "title": "", "url": "s" }],
       "slug": "hospital-django"
     },
