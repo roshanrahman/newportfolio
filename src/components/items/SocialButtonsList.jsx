@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 
 import PropTypes from "prop-types";
+import { RiBehanceLine } from "react-icons/ri";
 
 SocialButtonsList.propTypes = {
   size: PropTypes.string.isRequired,
@@ -28,11 +29,11 @@ function SocialButtonsList(props) {
     <ul className={"social-buttons-list"}>
       <li style={style}>
         <a
-          href="https://github.com/roshanrahman"
+          href="https://www.behance.net/roshanrahman"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiFillGithub title="Github link" />
+          <RiBehanceLine title="Behance link" />
         </a>
       </li>
       <li style={style}>
@@ -42,6 +43,15 @@ function SocialButtonsList(props) {
           rel="noopener noreferrer"
         >
           <AiOutlineDribbble title="Dribbble link" />
+        </a>
+      </li>
+      <li style={style}>
+        <a
+          href="https://github.com/roshanrahman"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub title="Github link" />
         </a>
       </li>
       <li style={style}>

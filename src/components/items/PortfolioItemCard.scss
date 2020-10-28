@@ -1,12 +1,15 @@
 .portfolio-item-card {
   display: flex;
+  justify-content: space-between;
   padding: 32px;
   border-radius: 16px;
   max-width: 1080px;
   color: white;
   align-items: center;
   margin: 32px;
+  background-size: cover;
   .left {
+      max-width: 70%;
     h1 {
       font-size: 4.5rem;
       font-weight: 900;

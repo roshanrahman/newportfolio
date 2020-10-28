@@ -55,21 +55,21 @@ class DesignProjectsSection extends Component {
           </div>
           <PortfolioItemCard
           title="Redesigning Nitya Gaan"
-          description="A project to overhaul the user interface to provide a more comfortable user experience and style it with modern, clean visual design"
+          description="Gave this handy reading app a makeover, to increase its usability, and style it with modern aesthetics"
           actionDescription="Read case study on Behance"
           color="#FF5C00"
-          endColor="#FF5C0000"
+          endColor="#FF5C0088"
           shadowColor="#FF5C0066"
           imageUrl="https://github.com/roshanrahman/newportfolio/raw/master/assets/casestudies/nitya-gaan/portfolio.jpg"
           linkUrl="https://www.behance.net/gallery/104842255/Redesigning-Nitya-Gaan-Case-Study"
           />
-          <PortfolioItemCard
+          {/* <PortfolioItemCard
           title="Redesigning Nitya Gaan"
           description="A project to overhaul the user interface to provide a more comfortable user experience and style it with modern, clean visual design"
           actionDescription="Read case study on Behance"
           color="#FF5C00"
           shadowColor="#FF5C0066"
-          />
+          /> */}
          
           
           <div className="title-card  mobile-block">
