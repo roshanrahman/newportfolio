@@ -1,13 +1,45 @@
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
-  row-gap: 36px;
-}
+.portfolio-section {
+  padding: 96px 0px;
+  a {
+    text-decoration: none;
+  }
+  * {
+    transition: 0.06s all ease;
+  }
+  :hover {
+    .arrow {
+      background-color: white;
+      color: black;
+    }
+  }
+  .title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      line-height: 5rem;
+      margin-bottom: 64px;
+    }
 
-.grid-item {
-  width: 400px;
-  min-height: 200px;
+    p {
+      color: var(--fg-color);
+      opacity: 0.3;
+      line-height: 1.8rem;
+      font-size: 1.286rem;
+      text-align: center;
+    }
+
+    button {
+      height: 38px;
+      font-weight: normal;
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 
 .mobile-title-card {

@@ -10,6 +10,7 @@ $tablet-width: 1025px;
   --dark-grey: rgb(163, 163, 163);
   --light-grey: rgb(228, 228, 228);
   --dribbble-color: #cf2668;
+  --behance-color: #053eff;
   --github-color: #121212;
   --elevated-color: #fff;
   --divider-color: rgba(0, 0, 0, 0.03);
@@ -31,6 +32,7 @@ $tablet-width: 1025px;
   --dark-grey: rgb(165, 165, 165);
   --light-grey: rgb(65, 65, 65);
   --dribbble-color: #cf2668;
+  --behance-color: #053eff;
   --github-color: #474747;
   --elevated-color: #1a1a1a;
   --divider-color: rgb(0, 0, 0, 0.2);
@@ -70,7 +72,7 @@ section {
 }
 
 .nodesktop {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-height: 900px) {
@@ -81,15 +83,15 @@ section {
 
 @media screen and (max-width: $tablet-width) {
   .nomobile {
-    display: none;
+    display: none !important;
   }
 
   .mobile-flex {
-    display: flex;
+    display: flex !important;
   }
 
   .mobile-block {
-    display: block;
+    display: block !important;
   }
   section {
     padding: 24px;

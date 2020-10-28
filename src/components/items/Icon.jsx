@@ -8,8 +8,11 @@ import {
   AiFillGithub,
   AiFillDribbbleCircle,
   AiOutlineDribbble,
+  AiOutlineBehance,
+  AiFillBehanceCircle,
+  AiFillBehanceSquare,
 } from "react-icons/ai";
-import { RiTwitterLine } from "react-icons/ri";
+import { RiBehanceLine, RiTwitterLine } from "react-icons/ri";
 import { FiGithub, FiArrowDownCircle } from "react-icons/fi";
 
 function IconResolved(props) {
@@ -36,8 +39,12 @@ function resolveIcon(props) {
       return <FiGithub {...props} />;
     case "dribbble-fill":
       return <AiFillDribbbleCircle {...props} />;
+      case "behance-fill":
+      return <RiBehanceLine {...props} />;
     case "dribbble-outlined":
       return <AiOutlineDribbble {...props} />;
+      case "behance-outlined":
+        return <AiOutlineBehance {...props} />;
     case "arrow-down-circled":
       return <FiArrowDownCircle {...props} />;
       default:
