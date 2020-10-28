@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import "./PortfolioItemCard.scss";
 import { FiArrowRight } from 'react-icons/fi';
+import ProjectCard from './ProjectCard';
 
 let computeBackground = props => {
     let color = props.color ?? 'red';
@@ -23,7 +24,17 @@ const PortfolioItemCard = props => {
     let computedBackground = computeBackground(props);
     let computedShadow = computeShadow(props);
     return (
-        <a href={props.linkUrl} target="_blank" rel="noopener noreferrer" className="portfolio-item-card" style={{backgroundImage: computedBackground, boxShadow: computedShadow}}>
+        <div>
+              <div className="nodesktop mobile-block">
+              <ProjectCard
+             image={props.imageUrl}
+             url={props.linkUrl}
+             actionText={'Read on Behance'}
+             title={props.title}
+             description={props.description}
+            />
+              </div>
+        <a href={props.linkUrl} target="_blank" rel="noopener noreferrer" className="portfolio-item-card nomobile" style={{backgroundImage: computedBackground, boxShadow: computedShadow}}>
             <div className="left">
                 <h1>
                     {props.title}
@@ -40,6 +51,8 @@ const PortfolioItemCard = props => {
             </div>
             
         </a>
+        </div>
+       
     );
 };
 

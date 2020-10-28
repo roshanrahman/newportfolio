@@ -74,7 +74,7 @@ class DesignProjectsSection extends Component {
           
           <div className="title-card  mobile-block">
             <div className="spacer" style={{ marginTop: "48px" }}></div>
-            <p>You'll also find some stuff on my </p>
+            <p>You’ll also find some stuff on my profiles on</p>
             <div className="buttons_list">
             <a
               href="https://www.behance.net/roshanrahman"
