@@ -134,6 +134,21 @@
       "githubUrl": "",
       "otherUrls": [{ "title": "", "url": "s" }],
       "slug": "article-python"
+    },
+    {
+      "title": "I created a UI design every day of April",
+      "articleTitle": "I created a UI design every day of April",
+      "description": "medium.com",
+      "shortDescription": "I created a UI design every day of April",
+      "articleUrl": "https://roshan6399.medium.com/i-created-a-ui-design-every-day-of-april-a797b0c4e86",
+      "smallImage": "https://github.com/roshanrahman/newportfolio/blob/master/assets/images/cover.png?raw=true",
+      "coverImage": "https://github.com/roshanrahman/newportfolio/blob/master/assets/images/cover.png?raw=true",
+      "type": "article",
+      "color": "#ff7e47",
+      "demoUrl": "",
+      "githubUrl": "",
+      "otherUrls": [{ "title": "", "url": "s" }],
+      "slug": "article-30-days"
     }
   ]
 }
