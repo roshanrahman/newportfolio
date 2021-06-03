@@ -76,7 +76,7 @@
       "slug": "electronic-mart"
     },
     {
-      "title": "Draft - Flutter Notes App (Android)",
+      "title": "Draft - Flutter Notes App",
       "articleTitle": "Designing and coding Draft - a Flutter app",
       "description": "An elegant notes taking app written in Flutter that uses sqflite for storage.",
       "shortDescription": "A clean, animated Flutter app that let you take notes",
